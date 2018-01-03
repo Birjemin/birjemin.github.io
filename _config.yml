@@ -6,12 +6,13 @@ logo_url: https://avatars2.githubusercontent.com/u/10378934?s=400&u=24dc5bd812c5
 google_analytics:
 theme: 
 wiki_folder: wiki
-use_github_wiki: false
+use_github_wiki: true
 use_prose_io: true
 google_cse_token: 
 custom_head: false
 custom_sidebar: true
 custom_footer: false
+comments: true
 gems:
   - jekyll-sitemap
   - jekyll-mentions
