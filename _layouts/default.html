@@ -130,7 +130,10 @@
     
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#toc').toc({ title: '<i>Contents</i>'});
+          $('#toc').toc({ title: '<i>目录</i>'});
+          $(".wiki").click(function() {
+            $(this).find(".ul").toggle();
+          });
         });
     </script>
   </body>
