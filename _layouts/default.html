@@ -132,7 +132,7 @@
         $(document).ready(function() {
           $('#toc').toc({ title: '<i>目录</i>'});
           $(".wiki").click(function() {
-            $(".ul").toggle();
+            $(this).parent().find('.ul').toggle();
           });
         });
     </script>
