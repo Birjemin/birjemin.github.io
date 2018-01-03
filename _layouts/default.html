@@ -132,6 +132,8 @@
         $(document).ready(function() {
           $('#toc').toc({ title: '<i>目录</i>'});
           $(".wiki").click(function() {
+            console.log($(this))
+            console.log($(this).find('.ul').text())
             $(this).find(".ul").toggle();
           });
         });
