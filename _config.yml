@@ -1,12 +1,12 @@
-title: Birjemin Master
-description: Birjemin Master Desc
-show_downloads: true
-git_branch: master
+title: Birjemin
+description: 随遇而安|时光不语，静等花开
+show_downloads: false
+git_branch: gh-pages
 logo_url: https://avatars2.githubusercontent.com/u/10378934?s=400&u=24dc5bd812c5b4222aa124e604fd932d400a5e97&v=4
 google_analytics:
 theme: 
 wiki_folder: wiki
-use_github_wiki: false
+use_github_wiki: true
 use_prose_io: true
 google_cse_token: 
 custom_head: false
