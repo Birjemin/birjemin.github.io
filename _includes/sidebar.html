@@ -2,5 +2,34 @@
 
 <ul>
   <li><a href="/git-wiki/">Home</a></li>
-  <li><a href="/git-wiki/wiki/mysql">Mysql</a></li>
-</ul>
+  <li><span class='wiki'>Php</span>
+    <ul class='ul' style="display:none"> 
+      <li><a href="/git-wiki/wiki/php">Php</a></li> 
+     </ul> 
+  </li>
+  <li><span class='wiki'>Mysql</span>
+    <ul class='ul' style="display:none"> 
+      <li><a href="/git-wiki/wiki/mysql">Mysqk</a></li> 
+     </ul> 
+  </li>
+  <li><span class='wiki'>Life</span>
+    <ul class='ul' style="display:none"> 
+      <li><a href="/git-wiki/wiki/life">Life</a></li> 
+      <li><a href="#">Ajax</a></li> 
+     </ul> 
+  </li>
+  <li><span class='wiki'>Other</span>
+    <ul class='ul' style="display:none"> 
+      <li><a href="/git-wiki/wiki/other">Other</a></li> 
+      <li><a href="#">Ajax</a></li> 
+     </ul> 
+  </li>
+</ul> 
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".wiki").click(function(){
+  $(".ul").toggle();
+  });
+});
+</script>
