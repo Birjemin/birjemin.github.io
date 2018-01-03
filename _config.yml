@@ -9,9 +9,9 @@ wiki_folder: wiki
 use_github_wiki: true
 use_prose_io: true
 google_cse_token: 
-custom_head: false
-custom_sidebar: false
-custom_footer: false
+custom_head: true
+custom_sidebar: true
+custom_footer: true
 gems:
   - jekyll-sitemap
   - jekyll-mentions
