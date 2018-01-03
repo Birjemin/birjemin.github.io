@@ -1,0 +1,20 @@
+title: Birjemin Master
+description: Birjemin Master Desc
+show_downloads: true
+git_branch: master
+logo_url: https://avatars2.githubusercontent.com/u/10378934?s=400&u=24dc5bd812c5b4222aa124e604fd932d400a5e97&v=4
+google_analytics:
+theme: 
+wiki_folder: wiki
+use_github_wiki: false
+use_prose_io: true
+google_cse_token: 
+custom_head: false
+custom_sidebar: false
+custom_footer: false
+gems:
+  - jekyll-sitemap
+  - jekyll-mentions
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-feed
