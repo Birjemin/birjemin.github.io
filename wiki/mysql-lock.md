@@ -45,5 +45,4 @@ INSERT INTO ... SELECT GETLOCK(t1.colname) FROM t1;
 
 1. [http://blog.csdn.net/tangtong1/article/details/51792617 ](http://blog.csdn.net/tangtong1/article/details/51792617)
 2. [https://dev.mysql.com/doc/refman/5.7/en/miscellaneous-functions.html](https://dev.mysql.com/doc/refman/5.7/en/miscellaneous-functions.html)
-
 3. [https://dev.mysql.com/doc/refman/5.7/en/locking-service.html](https://dev.mysql.com/doc/refman/5.7/en/locking-service.html)
