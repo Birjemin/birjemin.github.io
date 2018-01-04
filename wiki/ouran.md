@@ -1,5 +1,8 @@
 # ouran
 
+## 简介
+只能支撑一些小的接口，比如小程序接口，webapp接口等
+
 ## 结构
 ```
 app |
@@ -59,5 +62,5 @@ vendor |...
 
 参考：[Flight](http://flightphp.com/)
 
-## PS:
+## PS
 flight还没有看完~~~~继续看吧
