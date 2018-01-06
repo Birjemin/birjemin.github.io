@@ -1,20 +1,12 @@
-# 首页-Index
-
-## About Me
+## 关于
 小小的程序员呐呐呐~~
 
   > * `专业`：计算机科学与技术(本科)
-
   > * `Location`: 杭州
-  
   > * `Email`: Birjemin@foxmail.com
-  
   > * `Wechat`: Birjemin
-  
   > * `QQ`: 704992641
-  
   > * `来到地球`: 1994年
-  
   > * `Desc`: 患有直男癌、懒癌的佛系青年~
 
 ## 贴上n年前的qq日志吧，增加些内容
