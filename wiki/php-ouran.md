@@ -13,6 +13,9 @@ app |
                           |--- ArticleRepository.php
                           |--- ArticleService.php
                           |--- ArticleTrait.php
+    |- doc |
+           |--- sql |
+                    |--- sql
     |- Config |
               |--- database.php
     |- Helpers |
@@ -41,7 +44,9 @@ vendor |...
     * Config为配置目录
     * Helpers为支持文件目录
     * Models为数据库Model目录
-    
+
+* doc为文档目录
+
 * https为访问目录：
     * Controllers为路由目录；
     * routes.php为路由文件；
@@ -61,6 +66,7 @@ vendor |...
 项目位置：[https://github.com/Birjemin/ouran](https://github.com/Birjemin/ouran)
 
 参考：[Flight](http://flightphp.com/)
+
 
 ## PS
 flight还没有看完~~~~继续看吧
