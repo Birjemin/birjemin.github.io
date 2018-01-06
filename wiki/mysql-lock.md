@@ -1,6 +1,6 @@
-## MYSQL GET_LOCK锁
+# MYSQL GET_LOCK锁
 
-### 示例：
+## 示例：
 
 ```
 <?php
@@ -9,7 +9,7 @@
     $this->_db->query("SELECT RELEASE_LOCK('".$this->_lock."') AS ci_session_lock")->row()->ci_session_lock)
 ?>
 ```
-### 简介
+## 简介
 
 GET_LOCK(str,timeout)
 
@@ -41,7 +41,7 @@ INSERT INTO ... SELECT GETLOCK(t1.colname) FROM t1;
 
 这列类型的语句可能潜藏不利的因素。比如，如果这个语句执行失败发生回滚，虽然语句失败但是锁依然存在。如果你本来的意图是行插入成功和锁获取成功，这个时候就不满足不了。比如如果使用锁来控制一定的命令顺序，请注意根据优化器选择的执行计划可能会使结果集有所不同。由于这些原因，最好将应用限制为获取每个语句的单个锁。
 
-示例(别人的文章)：
+## 示例(别人的文章)：
 
 1. [http://blog.csdn.net/tangtong1/article/details/51792617 ](http://blog.csdn.net/tangtong1/article/details/51792617)
 2. [https://dev.mysql.com/doc/refman/5.7/en/miscellaneous-functions.html](https://dev.mysql.com/doc/refman/5.7/en/miscellaneous-functions.html)
