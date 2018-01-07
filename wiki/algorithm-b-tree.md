@@ -122,9 +122,9 @@ B和B+树的区别在于，B+树的非叶子结点只包含key信息，不包含
 ![B树和B+树的区别](http://upload.ouliu.net/i/201801072121242o53t.png)
 
 ## 综述
-磁盘存储和mysql的索引这一块用的比较多，以空间换时间来提升查找速度。
+磁盘存储和mysql的索引这一块用的比较多，以空间换时间来提升查找速度。（图片基本是从参考链接那边拿过来的，站在前人的肩膀上。）
 
-## 参考：
+## 参考
 1. [https://zh.wikipedia.org/wiki/B%E6%A0%91](https://zh.wikipedia.org/wiki/B%E6%A0%91)
 2. [http://blog.codinglabs.org/articles/theory-of-mysql-index.html](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
 3. [http://btechsmartclass.com/DS/U5_T3.html](http://btechsmartclass.com/DS/U5_T3.html)
