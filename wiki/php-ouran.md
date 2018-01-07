@@ -33,7 +33,6 @@ vendor |...
 ```
 
 ## 目录说明
-
 * app为项目目录：
     * Comps为模块目录，将项目分成相应的模块；
         * Transformer方法来格式化输出数据（对外）；
@@ -54,7 +53,6 @@ vendor |...
 * vendor
 
 ## 规则
-
 ```
 1.Controller只能通过Trait访问模块，Trait只能暴露Module和Transformer这两个对外的文件；
 2.Model只能被Repository调用；
@@ -62,7 +60,6 @@ vendor |...
 4.跨模块调用只能调用模块的Module，不能调用模块里面其他对象
 ```
 ## Location
-
 项目位置：[https://github.com/Birjemin/ouran](https://github.com/Birjemin/ouran)
 
 参考：[Flight](http://flightphp.com/)
