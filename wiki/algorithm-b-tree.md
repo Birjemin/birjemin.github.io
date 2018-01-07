@@ -9,7 +9,7 @@
 ```
 B-Tree is a self-balanced search tree with multiple keys in every node and more than two children for every node.
 ```
-B树是一种自平衡的搜索树,具有多每一个节点node都有多个keys，并且每个节点有2个子节点或者多于2个子节点。
+B树是一种自平衡的搜索树,每一个节点node都有多个keys，并且每个节点有2个子节点或者多于2个子节点。
 
 ```
 A B+ tree is an N-ary tree with a variable but often large number of children per node. A B+ tree consists of a root, internal nodes and leaves.The root may be either a leaf or a node with two or more children
@@ -118,7 +118,11 @@ Here you can straightaway delete k from x.
 
 ## B-树和B+树区别
 B和B+树的区别在于，B+树的非叶子结点只包含key信息，不包含data，每个节点的指针上限为2t而不是2t+1.所有的叶子结点和相连的节点使用链表相连，便于区间查找和遍历。
+
 ![B树和B+树的区别](http://upload.ouliu.net/i/201801072121242o53t.png)
+
+## 综述
+磁盘存储和mysql的索引这一块用的比较多，以空间换时间来提升查找速度。
 
 ## 参考：
 1. [https://zh.wikipedia.org/wiki/B%E6%A0%91](https://zh.wikipedia.org/wiki/B%E6%A0%91)
