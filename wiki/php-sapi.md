@@ -25,15 +25,19 @@ PHP中常用的SAPI有cli(命令行模式，单进程)、php-fpm、CGI、Apache.
 ## PHP的生命周期
 
 1. 单进程SAPI生命周期（CLI/CGI）
+
   ![单进程SAPI生命周期](http://www.php-internals.com/images/book/chapt02/02-01-01-cgi-lift-cycle.png)
 
 2. 多进程SAPI生命周期（Apache2）
+
   ![多进程SAPI生命周期](http://www.php-internals.com/images/book/chapt02/02-01-02-multiprocess-life-cycle.png)
 
 3. 多线程的SAPI生命周期
+
   ![多线程的SAPI生命周期](http://www.php-internals.com/images/book/chapt02/02-01-013-multithreaded-lift-cycle.png)
 
 4. Embed
+
   Embed SAPI是一种比较特殊的sapi，容许你在C/C++语言中调用PHP/ZE提供的函数。（不太了解，明天看一下！ [http://www.laruence.com/2008/09/23/539.html](http://www.laruence.com/2008/09/23/539.html)）
 
 ## 综述
