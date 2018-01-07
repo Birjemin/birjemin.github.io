@@ -118,7 +118,7 @@ Here you can straightaway delete k from x.
 
 ## B-树和B+树区别
 B和B+树的区别在于，B+树的非叶子结点只包含key信息，不包含data，所有的叶子结点和相连的节点使用链表相连，便于区间查找和遍历。
-![B树和B+树的区别](https://images0.cnblogs.com/blog/94031/201403/290050064379149.png)
+![B树和B+树的区别](http://upload.ouliu.net/i/201801072121242o53t.png)
 
 ## 参考：
 1. [https://zh.wikipedia.org/wiki/B%E6%A0%91](https://zh.wikipedia.org/wiki/B%E6%A0%91)
