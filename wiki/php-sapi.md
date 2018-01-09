@@ -12,6 +12,8 @@ SAPI是一个用来帮助其他开发程序扩展web服务器功能的应用程�
 PHP中常用的SAPI有cli(命令行模式，单进程)、php-fpm、CGI、Apache...
 有点像策略模式,使用相同的接口，但是实现会略有不同。
 
+![http://upload.ouliu.net/i/201801100105301e6ya.png](http://upload.ouliu.net/i/201801100105301e6ya.png)
+
 ## PHP的启动和终止
 * 请求之前的开始阶段：
   * MINIT：模块初始化阶段。初始化一些扩展、常量、类、资源等所有被php脚本用到的东西。（常驻内存,可以被所有请求使用。）
