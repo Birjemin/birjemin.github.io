@@ -31,7 +31,7 @@ Opcode是一种PHP脚本编译后的中间语言，就像Java的ByteCode,或者.
   3.Compilation, 将表达式编译成Opocdes
   4.Execution, 顺次执行Opcodes，每次一条，从而实现PHP脚本的功能。
 ```
-现在有的Cache比如APC,可以使得PHP缓存住Opcodes，这样，每次有请求来临的时候，就不需要重复执行前面3步，从而能大幅的提高PHP的执行速度。
+现在有的Cache比如APC、Opcache(APC止步于PHP 5.4，Zend Opcache从PHP 5.5 开始集成，取代APC。),可以使得PHP缓存住Opcodes，这样，每次有请求来临的时候，就不需要重复执行前面3步，从而能大幅的提高PHP的执行速度。
 如下图：
 
 ![http://upload.ouliu.net/i/20180110001550q4qct.png](http://upload.ouliu.net/i/20180110001550q4qct.png)
