@@ -47,9 +47,9 @@ In a B-Tree, the new element must be added only at leaf node. That means, always
 * Step 5: If that leaf node is already full, then split that leaf node by sending middle value to its parent node. Repeat tha same until sending value is fixed into a node.
 * Step 6: If the spilting is occuring to the root node, then the middle value becomes new root node for the tree and the height of the tree is increased by one.
 
-![B树插入数据的gif](https://files.cnblogs.com/files/yangecnu/btreebuild.gif)
+![B树插入数据的gif](http://upload.ouliu.net/i/201801111442186jktg.gif)
 
-![B+树插入数据的gif](https://files.cnblogs.com/files/yangecnu/Bplustreebuild.gif)
+![B+树插入数据的gif](http://upload.ouliu.net/i/20180111144313buplo.gif)
 
 ## 删除方法
 参考8的链接,有图有真相，这里就摘录一些重点文字条件吧。
