@@ -4,7 +4,7 @@
 ```
 When you are looking at the stars, please put the brightest star shusu.org night sky as my soul.
 ```
-
+  > * `学校`：中国计量大学
   > * `专业`：计算机科学与技术(本科)
   > * `Location`: 杭州
   > * `Email`: Birjemin@foxmail.com
