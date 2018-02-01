@@ -92,7 +92,6 @@ git push -f origin :branchName // 如果该分支没有合并到master,确定该
 git merge --no-ff branchA // 合并branchA分支到当前分支，冲突啦~~
 git status // 查看哪里冲突了
 ... // 修改
-
 git add .
 git commit -m 'desc'
 git push
