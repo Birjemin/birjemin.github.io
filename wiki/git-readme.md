@@ -1,7 +1,7 @@
 # Git的简易使用
 
 ## Git简介
-![http://upload.ouliu.net/i/20180201210814tzrym.jpeg](http://upload.ouliu.net/i/20180201210814tzrym.jpeg)
+![git简介](http://upload.ouliu.net/i/20180201210814tzrym.jpeg)
 
 ```
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
@@ -9,7 +9,7 @@ Git is a free and open source distributed version control system designed to han
 git是一个免费且开源的分布式版本控制系统，专门处理高速发展的从小至大的项目。
 
 ## 概念
-![http://upload.ouliu.net/i/201802012120532t2rl.jpeg](http://upload.ouliu.net/i/201802012120532t2rl.jpeg)
+![git概念](http://upload.ouliu.net/i/201802012120532t2rl.jpeg)
 
 工作区在计算机上的体现就是一个目录，与其它目录区别是其下有一个隐藏的 .git 目录，该目录就为版本库，是git的核心，不要随便手动修改此目录的内容。版本库中有三个最重要的文件，index，称为暂存区stage；分支文件，如master；HEAD文件，保存指向当前版本库中当前分支的指针。 
 比如在某个目录`git init`的时候该目录就会变成工作区，修改里面的内容时，通过`git status`可以查看修改的情况，通过`git add fileName`将工作区的内容提交到暂存区，也可以通过`git status`查看当前情况，`git commit -m 'desc'`就会把暂存区的内容提交到本地版本库中，`git push`就会将本地的版本库推送到服务器。
@@ -108,7 +108,7 @@ git show commit-id fileName
 推荐软件:sourceTree
 推荐ide都装上git插件，毕竟你看一个文件的历史修改记录总不会通过命令行来看吧。。。。
 比如：
-![http://upload.ouliu.net/i/20180201215612mlqly.jpeg](http://upload.ouliu.net/i/20180201215612mlqly.jpeg)
+![phpstorm的git插件](http://upload.ouliu.net/i/20180201215612mlqly.jpeg)
 
 ## 参考
 1. [https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
