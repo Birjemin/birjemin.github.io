@@ -97,6 +97,70 @@ mysql> SELECT * FROM pet WHERE (species = 'cat' AND sex = 'm') OR (species = 'do
 mysql> SELECT name, species, birth FROM pet WHERE species = 'dog' OR species = 'cat';
 ```
 
+> 去重查询
+```
+mysql> SELECT DISTINCT owner FROM pet;
+```
+
+> 对查询结果排序
+```
+mysql> SELECT name, birth FROM pet ORDER BY birth DESC(ASC);
+```
+
+> 日期计算
+```
+mysql> SELECT name, birth, CURDATE(), TIMESTAMPDIFF(YEAR,birth,CURDATE()) AS age FROM pet;
+```
+
+> 部分匹配查询
+```
+mysql> SELECT * FROM pet WHERE name LIKE '%b%';
+```
+
+> 正则匹配查询
+```
+mysql> SELECT * FROM pet WHERE name LIKE 'b%';
+mysql> SELECT * FROM pet WHERE name REGEXP 'fy$';
+mysql> SELECT * FROM pet WHERE name REGEXP '^.{5}$';
+```
+
+> 计数查询
+```
+mysql> SELECT COUNT(*) FROM pet;
+mysql> SELECT owner, COUNT(*) FROM pet GROUP BY owner;
+```
+
+> join查询
+```
+mysql> SELECT pet.name,
+    -> TIMESTAMPDIFF(YEAR,birth,date) AS age,
+    -> remark
+    -> FROM pet INNER JOIN event
+    ->   ON pet.name = event.name
+    -> WHERE event.type = 'litter';
+```
+
+> 查看当前的库
+```
+mysql> SELECT DATABASE();
+```
+
+> 查看当前库中的表单
+```
+mysql> SHOW TABLES;
+```
+
+> 查看数值最大的记录
+```
+SELECT article, dealer, price FROM shop WHERE  price=(SELECT MAX(price) FROM shop);
+```
+
+> 使用用户自定义的参数
+```
+mysql> SELECT @min_price:=MIN(price),@max_price:=MAX(price) FROM shop;
+mysql> SELECT * FROM shop WHERE price=@min_price OR price=@max_price;
+``` 
+
 ## 参考：
 1. [https://dev.mysql.com/doc/refman/8.0/en/](https://dev.mysql.com/doc/refman/8.0/en/)
 2. [http://yiyulinfeng.com/MySQL8.0/](http://yiyulinfeng.com/MySQL8.0/)
