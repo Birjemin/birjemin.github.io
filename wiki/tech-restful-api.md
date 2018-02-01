@@ -82,4 +82,4 @@ DELETE http://www.birjemin.com/api/user/{id} # 删除用户信息
 
 ## 参考
 1. [https://www.cnblogs.com/imyalost/p/7923230.html](https://www.cnblogs.com/imyalost/p/7923230.html)
-2.[http://www.ruanyifeng.com/blog/2014/05/restful_api](http://www.ruanyifeng.com/blog/2014/05/restful_api)
+2. [http://www.ruanyifeng.com/blog/2014/05/restful_api](http://www.ruanyifeng.com/blog/2014/05/restful_api)
