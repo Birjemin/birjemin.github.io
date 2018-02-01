@@ -107,7 +107,8 @@ git show commit-id fileName
 ## 综述
 推荐软件:sourceTree
 推荐ide都装上git插件，毕竟你看一个文件的历史修改记录总不会通过命令行来看吧。。。。
-比如：[http://upload.ouliu.net/i/20180201215612mlqly.jpeg](http://upload.ouliu.net/i/20180201215612mlqly.jpeg)
+比如：
+![http://upload.ouliu.net/i/20180201215612mlqly.jpeg](http://upload.ouliu.net/i/20180201215612mlqly.jpeg)
 
 ## 参考
 1. [https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
