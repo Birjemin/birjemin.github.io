@@ -7,6 +7,7 @@
 ![文件结构](http://upload.ouliu.net/i/20180201223933hybum.png)
 
 * html_downloader.py - 下载网页html内容
+
 ```
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
@@ -25,6 +26,7 @@ class HtmlDownloader(object):
 ```
 
 * html_outputer.py - 输出结果到文件中
+
 ```
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
@@ -45,6 +47,7 @@ class HtmlOutputer(object):
 ```
 
 * html_parser.py: 解析器：解析html的dom树
+
 ```
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
@@ -85,6 +88,7 @@ class HtmlParser(object):
 ```
 
 * spider_main.py - 主函数
+
 ```
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
