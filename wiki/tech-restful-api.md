@@ -3,6 +3,8 @@
 ## 简介
 Resource Representational State Transfer(不知是啥)
 
+![Restful Api](http://upload.ouliu.net/i/2018020201183875q9j.jpeg)
+
 ## 特征
 (1) 每一个uri代表一种资源；
 
