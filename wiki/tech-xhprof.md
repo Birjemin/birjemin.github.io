@@ -60,14 +60,14 @@ sudo /usr/local/Cellar/php70/7.0.14_7/sbin/php-fpm -D
 
 2. 建立两个开启函数(isDev()是判断本地环境的意思，请视情况删除)
 
-* 开启xhprof
+  * 开启xhprof
 ```
 function enableXhprof()
 {
     isDev() && xhprof_enable(0, []);
 }
 ```
-* 运行xhprof(xhprof_lib.php和xhprof_runs.php可以拷贝到项目的，请确保include_once请够加载这两个文件)。
+  * 运行xhprof(xhprof_lib.php和xhprof_runs.php可以拷贝到项目的，请确保include_once请够加载这两个文件)。
 ```
 function disableXhprof()
 {
@@ -85,8 +85,8 @@ function disableXhprof()
 3. 可以在需要监听的接口中代码片段前面加上enableXhprof(),后面加上disableXhprof()就好了。接下来就可以分析这段代码了。（请确保这两个函数全局访问）
 
 4. 将克隆的xprof配置虚拟主机，这个和你的项目一样的，就把xprof也当做一个项目，配置成浏览器可访问。比如我的配置：
-* host: 127.0.0.1       local.xhprof.com
-* nginx server conf
+  * host: 127.0.0.1       local.xhprof.com
+  * nginx server conf
 ```
 server {
   listen       80;
@@ -125,16 +125,16 @@ server {
 ![phpinfo](http://upload.ouliu.net/i/201802031054371bsd3.png)
 
 解决方法：更改php cli的默认版本
-* 我用的是bash
+  * 我用的是bash
 ```
 vim .bash_profile
 ```
-* 添加两行
+  * 添加两行
 ```
 # PHP -v
 export PATH="/usr/local/Cellar/php70/7.0.14_7/bin:$PATH"
 ```
-* 生效
+  * 生效
 ```
 source .bash_profile
 ```
