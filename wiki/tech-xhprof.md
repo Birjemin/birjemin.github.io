@@ -17,7 +17,7 @@ XHProf是一个分层PHP性能分析工具。它报告函数级别的请求次�
 
 ## 安装步骤
 当做一个php项目！clone别人php代码放哪个目录你自己定
-1. 编译安装
+1.编译安装
 ```
 cd /Users/birjemin/Developer/Php
 git clone https://github.com/longxinH/xhprof
@@ -29,7 +29,7 @@ make install
 ```
 ![编译成功之后](http://upload.ouliu.net/i/20180203103331j7i77.jpeg)
 
-2. 配置文件
+2.配置文件
 ```
 cd /usr/local/etc/php/7.0/conf.d
 vim ext-xhprof.ini
@@ -40,14 +40,14 @@ vim ext-xhprof.ini
 extension="/usr/local/Cellar/php70/7.0.14_7/lib/php/extensions/no-debug-non-zts-20151012/xhprof.so"
 ```
 
-3. 重启php-fpm（视个人重启方式而定，我的重启方式是这样的）
+3.重启php-fpm（视个人重启方式而定，我的重启方式是这样的）
 ```
 cd /usr/local/etc/php/7.0/
 sudo killall php-fpm
 sudo /usr/local/Cellar/php70/7.0.14_7/sbin/php-fpm -D
 ```
 
-4. 查看是否安装成功
+4.查看是否安装成功
 
 ![php -m](http://upload.ouliu.net/i/20180203110939nd5nd.png)
 
@@ -56,9 +56,9 @@ sudo /usr/local/Cellar/php70/7.0.14_7/sbin/php-fpm -D
 恭喜安装成功！
 
 ## 使用步骤
-1. 如果使用呢？两种方法，第一种就是把xhprof_lib.php和xhprof_runs.php拷贝到项目中，第二种就是用绝对路径引入这两个文件，推荐第一种，这样别人clone的你的项目，不需要做啥。
+1.如果使用呢？两种方法，第一种就是把xhprof_lib.php和xhprof_runs.php拷贝到项目中，第二种就是用绝对路径引入这两个文件，推荐第一种，这样别人clone的你的项目，不需要做啥。
 
-2. 建立两个开启函数(isDev()是判断本地环境的意思，请视情况删除)
+2.建立两个开启函数(isDev()是判断本地环境的意思，请视情况删除)
 
   * 开启xhprof
 ```
@@ -82,9 +82,9 @@ function disableXhprof()
 }
 ```
 
-3. 可以在需要监听的接口中代码片段前面加上enableXhprof(),后面加上disableXhprof()就好了。接下来就可以分析这段代码了。（请确保这两个函数全局访问）
+3.可以在需要监听的接口中代码片段前面加上enableXhprof(),后面加上disableXhprof()就好了。接下来就可以分析这段代码了。（请确保这两个函数全局访问）
 
-4. 将克隆的xprof配置虚拟主机，这个和你的项目一样的，就把xprof也当做一个项目，配置成浏览器可访问。比如我的配置：
+4.将克隆的xprof配置虚拟主机，这个和你的项目一样的，就把xprof也当做一个项目，配置成浏览器可访问。比如我的配置：
   * host: 127.0.0.1       local.xhprof.com
   * nginx server conf
 ```
@@ -108,17 +108,17 @@ server {
   }
 }
 ```
-5. 重启nginx，浏览器访问local.xhprof.com看看能不能访问（没有目录？？你是不是浏览器无法访问目录？？权限没开。。自己配置一下）
+5.重启nginx，浏览器访问local.xhprof.com看看能不能访问（没有目录？？你是不是浏览器无法访问目录？？权限没开。。自己配置一下）
 
 ![xhprof网站](http://upload.ouliu.net/i/20180203112523ab2do.png)
 
-6. 在postman或者浏览器访问接口，转啊转，好了之后就可以去
+6.在postman或者浏览器访问接口，转啊转，好了之后就可以去
 `http://local.xhprof.com/xhprof_html/`查看了。（图我就不截了。。下次讲一下xgui的使用）
 
 ![示例](http://upload.ouliu.net/i/20180203112909b6hs7.png)
 
 ## 遇到的问题
-1. php -v的版本和phpinfo()的版本不一致，如下图：
+1.php -v的版本和phpinfo()的版本不一致，如下图：
 
 ![php -v](http://upload.ouliu.net/i/20180203105336m46fk.jpeg)
 
@@ -139,7 +139,7 @@ export PATH="/usr/local/Cellar/php70/7.0.14_7/bin:$PATH"
 source .bash_profile
 ```
 
-2. 编译成功，但是php -m 没有 xhprof。
+2.编译成功，但是php -m 没有 xhprof。
 
 xhprof支持PHP7的库请在[longxinH-xhprof](https://github.com/longxinH/xhprof)查看！！！！
 
