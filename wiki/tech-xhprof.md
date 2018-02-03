@@ -108,6 +108,7 @@ server {
   }
 }
 ```
+
 5.重启nginx，浏览器访问local.xhprof.com看看能不能访问（没有目录？？你是不是浏览器无法访问目录？？权限没开。。自己配置一下）
 
 ![xhprof网站](http://upload.ouliu.net/i/20180203112523ab2do.png)
