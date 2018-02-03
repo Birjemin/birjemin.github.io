@@ -145,7 +145,7 @@ source .bash_profile
 xhprof支持PHP7的库请在[longxinH-xhprof](https://github.com/longxinH/xhprof)查看！！！！
 
 ## 备注
-全程经历了2.5h吧~~~不过文章也写了2.5小时。哈哈哈哈~这个东西和xdebug不一样的，这个是分析性能瓶颈的，可以让你优化代码。xdebug主要用于调试，我下次写一个xdebug安装的过程。
+全程经历了2.5h吧~~~不过文章也写了2.5h。哈哈哈哈~这个东西和xdebug不一样的，这个是分析性能瓶颈的，可以让你优化代码。xdebug主要用于调试，我下次写一个xdebug安装的过程。
 
 ## 参考
 1. [https://www.jianshu.com/p/38e3ae81970c](https://www.jianshu.com/p/38e3ae81970c)
