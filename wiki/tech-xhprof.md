@@ -15,7 +15,8 @@ XHProf是一个分层PHP性能分析工具。它报告函数级别的请求次�
 
 备注：我之前在[phacility](https://github.com/phacility/xhprof)克隆的，不过安装失败，原因就是我的PHP版本是PHP7，而phacility版本的并不支持。（采坑呢~~）
 
-## 安装步骤(当做一个php项目！clone别人php代码放哪个目录你自己定)
+## 安装步骤
+当做一个php项目！clone别人php代码放哪个目录你自己定
 1. 编译安装
 ```
 cd /Users/birjemin/Developer/Php
@@ -39,7 +40,7 @@ vim ext-xhprof.ini
 extension="/usr/local/Cellar/php70/7.0.14_7/lib/php/extensions/no-debug-non-zts-20151012/xhprof.so"
 ```
 
-3. 重启php-fpm（视个人情况而定）
+3. 重启php-fpm（视个人重启方式而定，我的重启方式是这样的）
 ```
 cd /usr/local/etc/php/7.0/
 sudo killall php-fpm
