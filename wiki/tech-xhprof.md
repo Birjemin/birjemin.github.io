@@ -26,7 +26,7 @@ phpize
 make
 make install
 ```
-[编译成功之后](http://upload.ouliu.net/i/20180203103331j7i77.jpeg)
+![编译成功之后](http://upload.ouliu.net/i/20180203103331j7i77.jpeg)
 
 2. 配置文件
 ```
@@ -48,9 +48,9 @@ sudo /usr/local/Cellar/php70/7.0.14_7/sbin/php-fpm -D
 
 4. 查看是否安装成功
 
-[php -m](http://upload.ouliu.net/i/20180203110939nd5nd.png)
+![php -m](http://upload.ouliu.net/i/20180203110939nd5nd.png)
 
-[phpinfo](http://upload.ouliu.net/i/20180203111006ewlh9.png)
+![phpinfo](http://upload.ouliu.net/i/20180203111006ewlh9.png)
 
 恭喜安装成功！
 
@@ -109,19 +109,19 @@ server {
 ```
 5. 重启nginx，浏览器访问local.xhprof.com看看能不能访问（没有目录？？你是不是浏览器无法访问目录？？权限没开。。自己配置一下）
 
-[xhprof网站](http://upload.ouliu.net/i/20180203112523ab2do.png)
+![xhprof网站](http://upload.ouliu.net/i/20180203112523ab2do.png)
 
 6. 在postman或者浏览器访问接口，转啊转，好了之后就可以去
 `http://local.xhprof.com/xhprof_html/`查看了。（图我就不截了。。下次讲一下xgui的使用）
 
-[示例](http://upload.ouliu.net/i/20180203112909b6hs7.png)
+![示例](http://upload.ouliu.net/i/20180203112909b6hs7.png)
 
 ## 遇到的问题
 1. php -v的版本和phpinfo()的版本不一致，如下图：
 
-[php -v](http://upload.ouliu.net/i/20180203105336m46fk.jpeg)
+![php -v](http://upload.ouliu.net/i/20180203105336m46fk.jpeg)
 
-[phpinfo](http://upload.ouliu.net/i/201802031054371bsd3.png)
+![phpinfo](http://upload.ouliu.net/i/201802031054371bsd3.png)
 
 解决方法：更改php cli的默认版本
 * 我用的是bash
