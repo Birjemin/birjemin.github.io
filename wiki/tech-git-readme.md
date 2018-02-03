@@ -6,7 +6,7 @@
 ```
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 ``` 
-git是一个免费且开源的分布式版本控制系统，专门处理高速发展的从小至大的项目。
+git是一个免费且开源的分布式版本控制系统，专门处理快速高效的从小至大的项目。
 
 ## 概念
 ![git概念](http://upload.ouliu.net/i/201802012120532t2rl.jpeg)
