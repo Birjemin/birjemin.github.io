@@ -141,7 +141,7 @@ server {
 
 3.为啥不在nginx里面配置
 ```
-fastcgi_param PHP_VALUE "auto_prepend_file=/home/0x584A/www/xhgui/external/header.php";
+fastcgi_param PHP_VALUE "auto_prepend_file=/Users/birjemin/Developer/Php/xhprof_gui/external/header.php";
 ```
 而是
 ```
