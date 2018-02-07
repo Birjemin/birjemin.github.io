@@ -2,6 +2,7 @@
 
 ## 简介
 xhgui基于xhprof，以图形化方式显示结果。简单点就是更加直观。
+采用`tideways + xhgui`组合的原因是我的PHP版本是7，而xhprof不支持，（虽然我安装了一个支持php7的xhprof，但是猜测和xhgui不兼容。）
 
 ## 前提
 我的PHP版本是PHP7:
@@ -11,8 +12,6 @@ xhgui基于xhprof，以图形化方式显示结果。简单点就是更加直观
 Mongdo的版本是V3.6.2:
 
 ![MongoDB版本](http://upload.ouliu.net/i/20180207171621gr5jt.jpeg)
-
-备注：我安装的xhpr
 
 ## 安装步骤
 
@@ -132,13 +131,13 @@ server {
 
 ![xgui](http://upload.ouliu.net/i/20180207172139h5vrs.jpeg)
 
-这是猜测我安装的xhprof虽然支持PHP7，但是和xhgui不兼容，把config.php里面的 `extension` 参数改成 `tideways_xhprof` 而不是 `xhprof`
+我猜测我安装的xhprof虽然支持PHP7，但是和xhgui不兼容，把config.php里面的 `extension` 参数改成 `tideways_xhprof` 而不是 `xhprof`
 
 2.mongoDb报错
 
 ![error](http://upload.ouliu.net/i/20180207172639hv7hc.jpeg)
 
-这是一个bug（[issue](https://github.com/perftools/xhgui/issues/221)）,请按照这个方法修改相应文件
+这是一个bug（[issue](https://github.com/perftools/xhgui/issues/221)）,请按照这个方法修改相应文件。
 
 3.为啥不在nginx里面配置
 ```
