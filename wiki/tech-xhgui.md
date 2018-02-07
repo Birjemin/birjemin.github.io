@@ -9,7 +9,7 @@ xhgui基于xhprof，以图形化方式显示结果。简单点就是更加直观
 
 ![PHP版本](http://upload.ouliu.net/i/20180203104935y3sca.jpeg)
 
-Mongdo的版本是V3.6.2:
+MongoDB的版本是V3.6.2:
 
 ![MongoDB版本](http://upload.ouliu.net/i/20180207171621gr5jt.jpeg)
 
