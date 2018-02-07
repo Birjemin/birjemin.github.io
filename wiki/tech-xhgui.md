@@ -1,4 +1,4 @@
-# xhgui
+# Xhgui+Tideways的使用
 
 ## 简介
 xhgui基于xhprof，以图形化方式显示结果。简单点就是更加直观。
