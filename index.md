@@ -24,5 +24,3 @@ When you are looking at the stars, please put the brightest star shusu.org night
 4. 暂时空着吧！（2016.08）
 
 5. 卧槽，已经过去6年啦~~~~等我想写点什么再叠加吧。(2018.01)
-
-6. 快过年啦！开心么？？？不不不，今年很比较压抑
