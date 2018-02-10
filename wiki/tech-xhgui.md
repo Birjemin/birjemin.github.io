@@ -2,7 +2,7 @@
 
 ## 简介
 xhgui基于xhprof，以图形化方式显示结果。简单点就是更加直观。
-采用`tideways + xhgui`组合的原因是我的PHP版本是7，而xhprof不支持，（虽然我安装了一个支持php7的xhprof，但是猜测和xhgui不兼容。）
+采用`tideways + xhgui`组合的原因是我的PHP版本是7，而xhprof不支持，（虽然我安装了一个支持php7的xhprof，但是没有数据，猜测和xhgui不兼容。）
 
 ## 前提
 我的PHP版本是PHP7:
