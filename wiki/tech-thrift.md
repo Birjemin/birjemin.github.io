@@ -31,6 +31,7 @@ brew install thrift
 该示例包含python,php,go三种语言。（java暂无）
 
 ### 新建HelloThrift.thrift
+
 1. 进入目录
 
 ```
