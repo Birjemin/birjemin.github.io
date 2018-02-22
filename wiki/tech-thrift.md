@@ -59,6 +59,7 @@ thrift -r --gen php:server HelloThrift.thrift
 这时目录中生成了一个叫做`gen-php`的目录。
 
 * 建立`Server.php`文件
+
 ```
 <?php
 /**
@@ -99,6 +100,7 @@ $transport->close();
 ```
 
 * 建立`Client.php`文件
+
 ```
 <?php
 /**
@@ -157,6 +159,7 @@ thrift -r --gen py HelloThrift.thrift
 这时目录中生成了一个叫做`gen-py`的目录。
 
 * 建立`Server.py`文件
+
 ```
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
@@ -187,6 +190,7 @@ server.serve()
 ```
 
 * 建立`Client.py`文件
+
 ```
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
@@ -234,6 +238,7 @@ thrift -r --gen go HelloThrift.thrift
 ```
 
 * 生成`Server.go`文件
+
 ```
 package main
 
@@ -267,6 +272,7 @@ func main() {
 ```
 
 * 生成`Client.go`文件
+
 ```
 package main
 
