@@ -312,9 +312,6 @@ go run Server.go
 * 开启两个窗口，保证server开启
 ```
 go run Server.go # localhost:9092
-```
-
-```
 python3 Server.py # localhost:9091
 ```
 
