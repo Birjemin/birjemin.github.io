@@ -1,12 +1,15 @@
-# Phpunit
+# PHPUnit
 
 ## 简介
+PHPUnit是一个面向PHP程序员的测试框架，这是一个xUnit的体系结构的单元测试框架。
 
 ## 安装
-`一般composer安装，vendor/bin/phpunit` 
+一般composer安装
+```
+composer require phpunit/phpunit
+```
 
-## 编写 PHPUnit 测试
-
+## 编写 PhpUnit 测试
 ### 测试的依赖关系
 用 @depends 标注来表达依赖关系（`DependTest.php`）
 
@@ -27,14 +30,13 @@
 | bool setOutputCallback(callable $callback) | 设置回调函数，用来做诸如将实际输出规范化之类的动作。|
 
 ## 命令行测试执行器
-手册只是列出了phpunit --help，自己看吧
+手册只是列出了`phpunit --help`，自己看吧
 
 ## 基境(fixture)
 在编写测试时，最费时的部分之一是编写代码来将整个场景设置成某个已知的状态，并在测试结束后将其复原到初始状态。这个已知的状态称为测试的基境(fixture)。
 
 ### 一般操作
 PHPUnit 支持共享建立基境的代码。在运行某个测试方法前，会调用一个名叫 setUp() 的 模板方法。setUp() 是创建测试所用对象的地方。当测试方法运行结束后，不管是成功还是失败，都会调用另外一个名叫 tearDown() 的模板方法。另外，setUpBeforeClass() 与 tearDownAfterClass() 模板方法将分别在测试用例类的第一个测试运行之前和测试用例类的最后一个测试运行之后调用。（`TemplateMethodsTest.php`）
-
 用 setUp() 建立栈的基境（`StackTest.php`）
 
 ### 基境共享
@@ -43,7 +45,6 @@ PHPUnit 支持共享建立基境的代码。在运行某个测试方法前，会
 ## 组织测试
 PHPUnit 的目标之一是测试应当可组合:我们希望能将任意数量的测试以任意组合方式运行。
 
-## 有风险的测试
 ## 未完成的测试与跳过的测试
 ### 未完成的测试
 比如代码没写完啊，功能测试没写完啊。(`SampleTest.php`)
@@ -110,12 +111,6 @@ vendor/bin/phpunit --coverage-text=./coverage.txt ./FileTest.php
 ```
 
 备注：如果你采用了框架来做项目，感觉这个干扰太大了。。。
-
-## 测试的其他用途
-
-## Logging (日志记录)
-
-## 扩展 PHPUnit
 
 ## 总结
 单元测试占用开发的时候还是很多的，大侠们尽量写吧，这样就能节省qa的时间。
