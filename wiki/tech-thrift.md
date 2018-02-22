@@ -321,32 +321,23 @@ python3 Server.py # localhost:9091
 * php调用go-server、py-server
 ```
 php Client.php localhost:9091
-```
-
-```
 php Client.php localhost:9092
 ```
 
 * python3调用go-server、py-server
 ```
 python3 Client.py localhost:9091
-```
-
-```
 python3 Client.py localhost:9092
 ```
 
 * go调用go-server、py-server
 ```
 go run Client.go localhost:9091
-```
-
-```
 go run Client.go localhost:9092
 ```
 
 ## 备注
-1. 没有测试php的socket，go\python3的http，可以花时间做一下
+1. 没有测试php的socket，go、python3的http，可以花时间做一下
 2. 代码纯属组装，没有深刻了解其中原理，后期打算写一篇理论篇和封装类库篇
 
 ## 参考
