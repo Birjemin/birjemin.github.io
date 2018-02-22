@@ -117,12 +117,13 @@ vendor/bin/phpunit --coverage-text=./coverage.txt ./FileTest.php
 
 ## 备注
 
-相应的代码位置：[ttps://github.com/Birjemin/study-php](https://github.com/Birjemin/study-php)
+相应的代码位置(你照着手册敲一遍也是可以哒)：[ttps://github.com/Birjemin/study-php](https://github.com/Birjemin/study-php)
 
 运行方式：
 ```
 vendor/bin/phpunit ./phpunit/AdditionProviderTest.php
 ```
+
 
 ## 参考
 1. 官方手册
