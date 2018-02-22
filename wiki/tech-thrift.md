@@ -40,7 +40,7 @@ vim HelloThrift.thrift
 ```
 内容如下：
 ```
-namespace php HelloThrift                                    
+namespace php HelloThrift {
   string SayHello(1:string username)
 }
 ```
