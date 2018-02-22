@@ -1,19 +1,21 @@
 # Thrift
 
 ## 简介
+
 ```
 The Apache Thrift software framework, for scalable cross-language services development, combines a software stack with a code generation engine to build services that work efficiently and seamlessly between C++, Java, Python, PHP, Ruby, Erlang, Perl, Haskell, C#, Cocoa, JavaScript, Node.js, Smalltalk, OCaml and Delphi and other languages.
 ```
 Apache Thrift是一个软件框架，用来进行可扩展跨语言的服务开发，结合了软件堆栈和代码生成引擎，用来构建C++,Java,Python...等语言，使之它们之间无缝结合、高效服务。
 
 ## 安装
+
 ```
 brew install thrift
 ```
 
 ## 作用
-跨语言调用，打破不同语言之间的隔阂。
-跨项目调用，微服务的么么哒。
+> 跨语言调用，打破不同语言之间的隔阂。
+> 跨项目调用，微服务的么么哒。
 
 ## 示例
 ### 前提
@@ -21,20 +23,27 @@ brew install thrift
 
 ![http://upload.ouliu.net/i/20180223002626ad08g.png](http://upload.ouliu.net/i/20180223002626ad08g.png)
 
+2. Go的版本、Php版本、Python版本：
+
+![http://upload.ouliu.net/i/20180223012029xj2s8.jpeg](http://upload.ouliu.net/i/20180223012029xj2s8.jpeg)
+
 ### 说明
 该示例包含python,php,go三种语言。（java暂无）
 
 ### 新建HelloThrift.thrift
 1. 进入目录
+
 ```
 cd /Users/birjemin/Developer/Php/study-php
 ```
 
 2. 编写HelloThrift.thrift
+
 ```
 vim HelloThrift.thrift
 ```
 内容如下：
+
 ```
 namespace php HelloThrift                                    
   string SayHello(1:string username)
@@ -48,6 +57,7 @@ composer require apache/thrift
 ```
 
 2. 生成php版本的thrift相关文件
+
 ```
 cd /Users/birjemin/Developer/Php/study-php
 thrift -r --gen php:server HelloThrift.thrift
@@ -55,6 +65,7 @@ thrift -r --gen php:server HelloThrift.thrift
 这时目录中生成了一个叫做`gen-php`的目录。
 
 3. 建立`Server.php`文件
+
 ```
 <?php
 /**
@@ -95,6 +106,7 @@ $transport->close();
 ```
 
 4. 建立`Client.php`文件
+
 ```
 <?php
 /**
@@ -134,24 +146,29 @@ $transport->close();
 ```
 
 5. 测试
+
 ```
 php Client.php --http
 ```
+
 ![http://upload.ouliu.net/i/201802230042026zg6h.png](http://upload.ouliu.net/i/201802230042026zg6h.png)
 
 ### Python测试
 1. 加载thrift-python3模块（只测试python3,python2就不测试了）
+
 ```
 pip3 install thrift
 ```
 
 2. 生成python3版本的thrift相关文件
+
 ```
 thrift -r --gen py HelloThrift.thrift
 ```
 这时目录中生成了一个叫做`gen-py`的目录。
 
 3. 建立`Server.py`文件
+
 ```
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
@@ -182,6 +199,7 @@ server.serve()
 ```
 
 4. 建立`Client.py`文件
+
 ```
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
@@ -211,6 +229,7 @@ transport.close()
 5. 测试
 
 开一个新窗口，运行下面命令：
+
 ```
 python3 Server.php
 ```
@@ -219,16 +238,19 @@ python3 Server.php
 
 ### Go测试
 1. 加载go的thrift模块
+
 ```
 go get git.apache.org/thrift.git/lib/go/thrift
 ```
 
 2. 生成go版本的thrift相关文件
+
 ```
 thrift -r --gen go HelloThrift.thrift
 ```
 
 3. 生成`Server.go`文件
+
 ```
 package main
 
@@ -262,6 +284,7 @@ func main() {
 ```
 
 4. 生成`Client.go`文件
+
 ```
 package main
 
@@ -291,6 +314,7 @@ func main() {
 5. 测试
  
 开一个新窗口，运行下面命令：
+
 ```
 go run Server.go
 ```
@@ -299,17 +323,17 @@ go run Server.go
 
 ### 综合测试
 1. 开启两个窗口，保证server开启
+
 ```
 go run Server.go # localhost:9092
-
 ```
 
 ```
 python3 Server.py # localhost:9091
-
 ```
 
 2. php调用go-server、py-server
+
 ```
 php Client.php localhost:9091
 ```
@@ -319,6 +343,7 @@ php Client.php localhost:9092
 ```
 
 3. python3调用go-server、py-server
+
 ```
 python3 Client.py localhost:9091
 ```
@@ -328,6 +353,7 @@ python3 Client.py localhost:9092
 ```
 
 4. go调用go-server、py-server
+
 ```
 go run Client.go localhost:9091
 ```
