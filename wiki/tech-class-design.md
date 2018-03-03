@@ -191,16 +191,10 @@ class Work
   }
 }
 ```
+
 弊端：修改代码~~
 更改Work类的代码->
-```php
-class Student extend User
-{
-  private $identify = '学生';  
-}
-```
 
-* 示例2：调整结构
 ```php
 interface UserInterface
 {
