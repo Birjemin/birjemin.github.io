@@ -11,6 +11,7 @@ SOLID:
 > * 迪米特法则
 
 ## 详情
+
 ### 单一职责原则（SRP:Single responsibility principle）
 解耦和增强内聚性（高内聚，低耦合），一个类和方法的只负责一个职责
 
@@ -106,6 +107,7 @@ class DrawManage
 ```
 
 ### 开闭原则(OCP:Open/Closed Principle)
+
 对扩展开放，对修改关闭。
 与其修改别人的代码（或者老代码）不如先继承，然后更改。
 * 示例1：新增一个学生，应当采用继承的方式来做，而不是修改原有的代码
@@ -242,9 +244,11 @@ class Work
 ```
 
 ### 里氏替换原则（LSP:Liskov Substitution Principle）
+
 父类出现的地方子类就可以出现，且替换成子类也不会出现任何错误或者异常。
 
 ### 接口隔离原则 (ISP:Interface Segregation Principle)
+
 针对接口的原则，规范如下：
 * 接口尽量小（细化业务）
 * 接口高内聚（减少对外交互，public方法少）
