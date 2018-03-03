@@ -44,6 +44,24 @@
 8. 上线
 9. 复盘会议
 
+## 性能优化
+1. 数据层面
+* 使用ssdb
+* 添加索引，读写分离，拆表,sql语句优化
+* 添加缓存
+* 预先计算（将结果预先计算好，比如脚本定时计算、实时计算结果）
+* 采用日志收集技术，异步处理
+* 分页获取数据
+* 使用es进行大量数据的聚合运算
+
+2. 业务方面
+* 异步代替同步
+* 限流
+* 砍需求呗
+
+3. 其他
+* 开启opcache
+
 ## 和产品PD撕逼的艺术
 
 能动手就别动嘴
@@ -55,3 +73,4 @@
 1. [https://psr.phphub.org/](https://psr.phphub.org/)
 2. [https://github.com/nonfu/laravel-best-practices](https://github.com/nonfu/laravel-best-practices)
 3. [http://plantuml.com/](http://plantuml.com/)
+4. [https://www.cnblogs.com/easypass/archive/2010/12/08/1900127.html](https://www.cnblogs.com/easypass/archive/2010/12/08/1900127.html)
