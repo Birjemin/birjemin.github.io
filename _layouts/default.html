@@ -2,7 +2,8 @@
 <html>
   <head>
     
-    <link rel="Shortcut Icon" href="http://www.uupoop.com/icotemp/20180303054615840/favicon.ico" />
+    <link rel="icon" href="http://www.uupoop.com/icotemp/20180303054615840/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="http://www.uupoop.com/icotemp/20180303054615840/favicon.ico" type="image/x-icon"/>
 
     {% capture lchar %}{{page.url | slice: -1, 1}}{% endcapture %}
     {% capture url %}{% if lchar == "/" %}{{page.url}}index.html{% else %}{{ page.url | default: 'index.html' }}{% endif %}{% endcapture %}
