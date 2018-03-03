@@ -1,9 +1,6 @@
 <!doctype html>
 <html>
   <head>
-    
-    <link rel="icon" href="http://www.uupoop.com/icotemp/20180303054615840/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="http://www.uupoop.com/icotemp/20180303054615840/favicon.ico" type="image/x-icon"/>
 
     {% capture lchar %}{{page.url | slice: -1, 1}}{% endcapture %}
     {% capture url %}{% if lchar == "/" %}{{page.url}}index.html{% else %}{{ page.url | default: 'index.html' }}{% endif %}{% endcapture %}
@@ -53,7 +50,7 @@
       {% endif %}
 
       {% if site.show_music %}
-      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=360 src="//music.163.com/outchain/player?type=0&id=2125935099&auto=1&height=430"></iframe>
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=380 src="//music.163.com/outchain/player?type=0&id=2125935099&auto=1&height=430"></iframe>
       {% endif %}
         
       </header>
