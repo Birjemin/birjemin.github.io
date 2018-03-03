@@ -145,8 +145,9 @@ class Student extend User
 }
 ```
 
-* 示例2：调整结构
+* 示例2：调整结构。
 增加新的角色和工种时
+
 ```php
 interface UserInterface
 {
@@ -198,6 +199,7 @@ class Student extend User
   private $identify = '学生';  
 }
 ```
+
 * 示例2：调整结构
 ```php
 interface UserInterface
