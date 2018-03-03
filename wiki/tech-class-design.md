@@ -319,8 +319,20 @@ class Worker implements WorkerInterface
 
 ## 综述
 根据实际情况使用不同的原则，可以使得程序降低耦合和冗余代码，优化程序。根据这些规则，会有一系列的设计模式，在实际使用时没必要强行套用设计模式，需要根据业务实际划分合理即可。长城不是一天就能修好的~~~
+  
+补充：添加参考中的第四点，大家可以看一看。
+
+| 职责 | 作用 |
+| :---: | :---: | :---: |
+| 单一职责原则 | 实现类要职责单一 |
+| 里氏替换原则 | 不要破坏继承体系 |
+| 依赖倒置原则 | 面向接口编程 |
+| 接口隔离原则 | 在设计接口的时候要精简单一 |
+| 开闭原则 | 对扩展开放，对修改关闭 |
+| 迪米特法则 | 降低耦合 |
 
 ## 参考
 1. [https://www.cnblogs.com/HouJiao/p/5459022.html](https://www.cnblogs.com/HouJiao/p/5459022.html)
 2. [https://segmentfault.com/a/1190000011662984](https://segmentfault.com/a/1190000011662984)
 3. [http://blog.csdn.net/jhq0113/article/details/44907029](http://blog.csdn.net/jhq0113/article/details/44907029)
+4. [https://www.jianshu.com/p/21573a0b2ad9](https://www.jianshu.com/p/21573a0b2ad9)
