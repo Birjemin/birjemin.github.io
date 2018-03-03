@@ -32,12 +32,12 @@
         </a>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-        {% if site.show_music %}
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=270 height=86 src="//music.163.com/outchain/player?type=0&id=2125935099&auto=1&height=430"></iframe>
-        {% endif %}
-
         {% if site.github.is_user_page %}
           <p class="view"><a target="_blank" href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+        {% endif %}
+        
+        {% if site.show_music %}
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=270 height=86 src="//music.163.com/outchain/player?type=0&id=2125935099&auto=1&height=430"></iframe>
         {% endif %}
 
         {% if site.show_downloads %}
