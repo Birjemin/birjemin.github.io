@@ -16,6 +16,7 @@ SOLID:
 解耦和增强内聚性（高内聚，低耦合），一个类和方法的只负责一个职责
 
 * 示例1：一个类中一个方法职责混乱。
+
 ```php
 class Activity
 {
@@ -29,8 +30,10 @@ class Activity
   }
 }
 ```
+
 弊端：如果再增加条件，和输出修改,会加重逻辑。
 改变为 ->
+
 ```php
 class Activity
 {
@@ -54,6 +57,7 @@ class Activity
 ```
 
 * 示例2：类的职责混乱
+
 ```php
 class Activity
 {
@@ -70,8 +74,10 @@ class Activity
   }
 }
 ```
+
 弊端：类的职责不清。抽奖和活动不应该属于同一个类
 更改为->
+
 ```php
 class Activity
 {
@@ -111,6 +117,7 @@ class DrawManage
 对扩展开放，对修改关闭。
 与其修改别人的代码（或者老代码）不如先继承，然后更改。
 * 示例1：新增一个学生，应当采用继承的方式来做，而不是修改原有的代码
+
 ```php
 interface UserInterface
 {
@@ -125,7 +132,9 @@ class User implements UserInterface
   }
 }
 ```
+
 改为->
+
 ```php
 interface UserInterface
 {
@@ -252,6 +261,7 @@ class Work
 * 有限设计（和第一个规范相辅相成）
 
 示例：
+
 ```php
 interface User
 {
@@ -278,6 +288,7 @@ class Worker implements User
 ```
 
 可以修改->
+
 ```php
 interface StudentInterface
 {
