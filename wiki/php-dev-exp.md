@@ -16,10 +16,11 @@
 
 ## 代码分布
 1. MVC
-Model - sql处理，不应当出现业务
-View - 
-Controller - 处理参数验证和方法调用(更彻底的方式是新建一个请求类，请求类处理验证和参数过滤，控制类调用请求类)
-Service - 业务
+* Model - sql处理，不应当出现业务
+* View - 
+* Controller - 处理参数验证和方法调用(更彻底的方式是新建一个请求类，请求类处理验证和参数过滤，控制类调用请求类)
+* Service - 业务
+
 2. 升级版本
 [http://birjemin.com/wiki/php-ouran](http://birjemin.com/wiki/php-ouran)
 
