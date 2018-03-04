@@ -11,7 +11,7 @@
 2. 遵循PSR-2 编码风格规范[https://laravel-china.org](https://laravel-china.org/topics/2079/psr-specification-psr-2-coding-style-specification)
 3. 注释！！！
 4. 常量、env代替硬编码
-5. 路由遵循RestApi原则 
+5. 路由遵循RestfulApi原则 
 6. created_at(INT类型),updated_at(TIMESTAMP on CURRENT_TIMESTAMP，日期类型，自动更新), deleted_at(default NULL)
 
 ## 代码分布
