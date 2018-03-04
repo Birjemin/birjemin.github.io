@@ -8,7 +8,7 @@ When you are looking at the stars, please put the brightest star shusu.org night
   > * `专业`：计算机科学与技术(本科)
   > * `Location`: 杭州
   > * `Email`: Birjemin@foxmail.com
-  > * `自媒体号`: 偶然与突然（今日头条，大鱼号，企鹅号，百家号）
+  > * `自媒体号`: 偶然与突然（头条号，大鱼号，企鹅号，百家号）
   > * `Wechat`: Birjemin
   > * `QQ`: 704992641
   > * `来到地球`: 1994年
