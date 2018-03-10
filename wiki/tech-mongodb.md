@@ -13,7 +13,7 @@ MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写�
 * 高性能，高可用性和可伸缩性
 
 ## MongoDB概念
-1.SQL术语对比
+1. SQL术语对比
 
 | SQL术语/概念 | MongoDB术语/概念 |	解释/说明 |
 | :---: | :---: | :---: |
@@ -25,11 +25,11 @@ MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写�
 | table joins | 	| 表连接,MongoDB不支持 |
 | primary key |	primary key | 主键,MongoDB自动将_id字段设置为主键 |
 
-2.SQL条件对比
+2. SQL条件对比
 
 | 操作 | 格式 | 范例 | RDBMS中的类似语句 |
 | :---: | :---: | :---: | :---: |
-| 等于 | {<key>:<value>} | db.col.find({"by":"菜鸟教程"}).pretty() | where by = '菜鸟教程' |
+| 等于 | {<key>:<value>} | db.col.find({"by":"ahh"}).pretty() | where by = 'ahh' |
 | 小于 | {<key>:{$lt:<value>}} | db.col.find({"likes":{$lt:50}}).pretty() | where likes < 50 |
 | 小于或等于 | {<key>:{$lte:<value>}} | db.col.find({"likes":{$lte:50}}).pretty() | where likes <= 50 |
 | 大于 | {<key>:{$gt:<value>}} | db.col.find({"likes":{$gt:50}}).pretty() | where likes > 50 |
@@ -37,22 +37,22 @@ MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写�
 | 不等于 | {<key>:{$ne:<value>}} | db.col.find({"likes":{$ne:50}}).pretty() | where likes != 50 |
 
 ## 基本语句
-1. 数据库操作
+1.数据库操作
   * 创建数据库：use DATABASE_NAME
   * 查看数据库：show dbs
   * 删除数据库：db.dropDatabase()
 
-2. 集合操作
+2.集合操作
   * 创建集合：db.createCollection(COLLECTION_NAME)
   * 查看集合：show collections
   * 删除集合：db.COLLECTION_NAME.drop()
 
-3. 文档操作
+3.文档操作
   * 插入文档：db.COLLECTION_NAME.insert(document)
   * 查看文档：db.COLLECTION_NAME.find(query, projection)
   * 更新文档：db.COLLECTION_NAME.update(document) /db.COLLECTION_NAME.save(document)
   * 删除文档：db.COLLECTION_NAME.remove(document)
-4. 其他
+4.其他
   * limit()、skip()、sort()、创建索引：ensureIndex()
   * 聚合 db.COLLECTION_NAME.aggregate(AGGREGATE_OPERATION)
 
