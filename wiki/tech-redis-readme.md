@@ -1,6 +1,6 @@
 # Redis的简易使用
 
-## Redist简介
+## Redis简介
 ![redis简介](http://upload.ouliu.net/i/20180310151124il1mb.jpeg)
 
 ```
