@@ -87,7 +87,7 @@ Redis是一个开源的使用ANSI C语言编写、遵守BSD协议、支持网络
 更多的场景:
 
 * [https://www.cnblogs.com/NiceCui/p/7794659.html](https://www.cnblogs.com/NiceCui/p/7794659.html)
-* https://www.cnblogs.com/xiaoxi/p/7007695.html](https://www.cnblogs.com/xiaoxi/p/7007695.html)
+* [https://www.cnblogs.com/xiaoxi/p/7007695.html](https://www.cnblogs.com/xiaoxi/p/7007695.html)
 * [https://www.cnblogs.com/mrhgw/p/6278619.html](https://www.cnblogs.com/mrhgw/p/6278619.htmls)
 * [http://blog.csdn.net/truong/article/details/39228731](http://blog.csdn.net/truong/article/details/39228731)
 
