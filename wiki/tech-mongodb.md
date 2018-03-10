@@ -14,7 +14,6 @@ MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写�
 
 ## MongoDB概念
 1. SQL术语对比
-
 | SQL术语/概念 | MongoDB术语/概念 |	解释/说明 |
 | :---: | :---: | :---: |
 | database | database |	数据库 |
@@ -26,7 +25,6 @@ MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写�
 | primary key |	primary key | 主键,MongoDB自动将_id字段设置为主键 |
 
 2. SQL条件对比
-
 | 操作 | 格式 | 范例 | RDBMS中的类似语句 |
 | :---: | :---: | :---: | :---: |
 | 等于 | {<key>:<value>} | db.col.find({"by":"菜鸟教程"}).pretty() | where by = '菜鸟教程' |
