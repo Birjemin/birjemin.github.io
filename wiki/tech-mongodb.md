@@ -59,6 +59,7 @@ MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写�
 * 日志分析
 * 存储用户不敏感信息、评论信息
 * 工单系统
+* 事务性不强，读频繁
 ...
 
 ## 备注
@@ -70,3 +71,4 @@ CAP:
 ## 参考
 1. [http://www.runoob.com/mongodb/mongodb-tutorial.html](http://www.runoob.com/mongodb/mongodb-tutorial.html)
 2. [http://blog.csdn.net/xiaoxiong_web/article/details/53404428](http://blog.csdn.net/xiaoxiong_web/article/details/53404428)
+3. [http://www.cnblogs.com/caihuafeng/p/5494336.html](http://www.cnblogs.com/caihuafeng/p/5494336.html)
