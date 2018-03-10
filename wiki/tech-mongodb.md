@@ -14,7 +14,7 @@ MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写�
 
 ## MongoDB概念
 1. SQL术语对比
-
+
 | SQL术语/概念 | MongoDB术语/概念 |	解释/说明 |
 | :---: | :---: | :---: |
 | database | database |	数据库 |
