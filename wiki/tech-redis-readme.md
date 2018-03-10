@@ -65,9 +65,9 @@ Redis是一个开源的使用ANSI C语言编写、遵守BSD协议、支持网络
 | SREM | 从集合移除元素 | SREM key item |
 | SMEMBERS | 返回集合中的所有成员 | SMEMBERS key |
 
-[更多使用方式](http://www.runoob.com/redis/redis-sets.html)
+[更多使用方式](http://www.runoob.com/redis/redis-sets.html)
 
-* zset类型，有序集合和集合一样也是string类型元素的集合,且不允许重复的成员。不同的是每个元素都会关联一个double类型的分数。redis正是通过分数来为集合中的成员进行从小到大的排序。有序集合的成员是唯一的,但分数(score)却可以重复。集合中最大的成员数为 2^32 - 1 (每个集合可存储40多亿个成员)。
+* zset类型，有序集合和集合一样也是string类型元素的集合,且不允许重复的成员。不同的是每个元素都会关	联一个double类型的分数。redis正是通过分数来为集合中的成员进行从小到大的排序。有序集合的成员是唯一的,但分数(score)却可以重复。集合中最大的成员数为 2^32 - 1 (每个集合可存储40多亿个成员)。
 
 | 方法 | 用途 | 示例 |
 | :---: | :---: | :---: |
@@ -75,6 +75,7 @@ Redis是一个开源的使用ANSI C语言编写、遵守BSD协议、支持网络
 | ZREM | 从集合移除元素 | ZREM key item |
 
 ## 使用场景
+
 | 类型 | 用途示例 |
 | :---: | :---: |
 | string | 计数器，数据缓存 |
@@ -86,9 +87,7 @@ Redis是一个开源的使用ANSI C语言编写、遵守BSD协议、支持网络
 更多的场景:
 
 > [https://www.cnblogs.com/NiceCui/p/7794659.html](https://www.cnblogs.com/NiceCui/p/7794659.html)
-
 > [https://www.cnblogs.com/xiaoxi/p/7007695.html](https://www.cnblogs.com/xiaoxi/p/7007695.html)
-
 > [https://www.cnblogs.com/mrhgw/p/6278619.html](https://www.cnblogs.com/mrhgw/p/6278619.htmls)
 
 ## 补充
@@ -96,7 +95,11 @@ redis还有事务、发布订阅等功能。
 
 ## 参考
 1.[http://blog.csdn.net/xlgen157387/article/details/60958657?](http://blog.csdn.net/xlgen157387/article/details/60958657)
+
 2.[http://www.runoob.com/redis/redis-tutorial.html](http://www.runoob.com/redis/redis-tutorial.html)
+
 3.[http://doc.redisfans.com/](http://doc.redisfans.com/)
+
 4.[https://www.cnblogs.com/mrhgw/p/6278619.html](https://www.cnblogs.com/mrhgw/p/6278619.html)
+
 5.[http://blog.csdn.net/yoko_luo/article/details/52303867](http://blog.csdn.net/yoko_luo/article/details/52303867)
