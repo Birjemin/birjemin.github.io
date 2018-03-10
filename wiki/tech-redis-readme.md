@@ -92,11 +92,13 @@ Redis是一个开源的使用ANSI C语言编写、遵守BSD协议、支持网络
 
 > [https://www.cnblogs.com/mrhgw/p/6278619.html](https://www.cnblogs.com/mrhgw/p/6278619.htmls)
 
+> [http://blog.csdn.net/truong/article/details/39228731](http://blog.csdn.net/truong/article/details/39228731)
+
 ## 补充
 redis还有事务、发布订阅等功能。
 
 ## 参考
-1. [http://blog.csdn.net/xlgen157387/article/details/60958657?](http://blog.csdn.net/xlgen157387/article/details/60958657)
+1. [http://blog.csdn.net/xlgen157387/article/details/60958657](http://blog.csdn.net/xlgen157387/article/details/60958657)
 2. [http://www.runoob.com/redis/redis-tutorial.html](http://www.runoob.com/redis/redis-tutorial.html)
 3. [http://doc.redisfans.com/](http://doc.redisfans.com/)
 4. [https://www.cnblogs.com/mrhgw/p/6278619.html](https://www.cnblogs.com/mrhgw/p/6278619.html)
