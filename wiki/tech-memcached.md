@@ -1,4 +1,4 @@
-# Memcached的简易使用
+# Memcached的使用
 ![Memcached简介](http://upload.ouliu.net/i/20180310211106206n0.jpeg)
 
 ## Memcached简介

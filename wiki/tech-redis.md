@@ -1,4 +1,4 @@
-# Redis的简易使用
+# Redis的使用
 
 ## Redis简介
 ![redis简介](http://upload.ouliu.net/i/20180310151124il1mb.jpeg)
