@@ -8,21 +8,27 @@ ElasticSearch是一个基于Lucene的搜索服务器。它提供了一个分布�
 ```
 brew install elasticsearch@5.6
 ```
-1. 结果：
+
+1.结果：
+
 ![查看版本](http://upload.ouliu.net/i/20180322172851v0vek.jpeg)
 
-2. 开启、关闭、重启es
+2.开启、关闭、重启es
 ```
 brew services start elasticsearch@5.6
 brew services stop elasticsearch@5.6
 brew services restart elasticsearch@5.6
 ```
-3. 灌入数据方式(测试时我使用的是postman)
+
+3.灌入数据方式(测试时我使用的是postman)
+
 ![灌入数据示例](http://upload.ouliu.net/i/201803221803076lmb1.png)
 
 ## 安装elasticsearch-head
-1. 目的：用于查看es的状态和信息（也可以查看数据）。
-2. github地址: [elasticsearch-head](https://github.com/mobz/elasticsearch-head)
+
+1.目的：用于查看es的状态和信息（也可以查看数据）。
+
+2.github地址: [elasticsearch-head](https://github.com/mobz/elasticsearch-head)
 
 我安装的是chrome extension，安装方法如下：
 ```
@@ -31,23 +37,30 @@ Running as a Chrome extension
 Install ElasticSearch Head from the Chrome Web Store.
 Click the extension icon in the toolbar of your web browser.
 ```
-3. 结果：
+
+3.结果：
+
 ![查看](http://upload.ouliu.net/i/20180322173110qmjkg.jpeg)
 
 ## 安装elasticsearch-sql
-1. 目的：使用一般的sql来对es进行查询和聚合
-2. github地址:[elasticsearch-sql](https://github.com/NLPchina/elasticsearch-sql)
-3. 根据相应的es版本使用手册上面相应的命令安装该插件。
+
+1.目的：使用一般的sql来对es进行查询和聚合
+
+2.github地址:[elasticsearch-sql](https://github.com/NLPchina/elasticsearch-sql)
+
+3.根据相应的es版本使用手册上面相应的命令安装该插件。
 比如我的安装命令是：
 ```
 elasticsearch-plugin install https://github.com/NLPchina/elasticsearch-sql/releases/download/5.6.8.0/elasticsearch-sql-5.6.8.0.zip
 ```
 
 4. 使用方式
+
 * 使用api接口操作  
 ```
 http://localhost:9200/_sql?sql=select * from song001/list001
 ```
+
 * 使用web视图操作
 根据官网介绍
 
@@ -59,6 +72,7 @@ npm install express --save
 node node-server.js 
 ```
 所以下载zip包，解压到自己的目录下面，比如我的目录是这样：
+
 ![sql目录](http://upload.ouliu.net/i/2018032217472808wow.png)
 
 然后按照手册所说运行。（请提前安装好node啦~~）
@@ -89,6 +103,7 @@ var server = app.listen(siteConfiguration.port)
 ```
 
 * web视图查看数据
+
 ![sql数据查看](http://upload.ouliu.net/i/20180322180709pwhqo.jpeg)
 
 ## 手册
