@@ -89,7 +89,7 @@ var server = app.listen(siteConfiguration.port)
 ![sql数据查看](http://upload.ouliu.net/i/20180322180709pwhqo.jpeg)
 
 ## 手册
-https://github.com/mobz/elasticsearch-head
+https://www.elastic.co/guide/en/elasticsearch/guide/master/create-doc.html
 
 ## 注意点
 * 和sql的区别，比如select id, name from table group by name,得到的数据集合没有id这个字段。
