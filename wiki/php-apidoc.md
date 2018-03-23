@@ -22,7 +22,7 @@ npm install apidoc -g
 npm install http-server -g 
 ```
 
-2.给接口添加文档（官方示例），添加在Controller入口文档。
+2.给接口添加文档（官方示例），添加在Controller入口方法前面。
 
 ```
 /**
