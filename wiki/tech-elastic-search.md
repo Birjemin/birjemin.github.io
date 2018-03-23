@@ -54,7 +54,7 @@ Click the extension icon in the toolbar of your web browser.
 elasticsearch-plugin install https://github.com/NLPchina/elasticsearch-sql/releases/download/5.6.8.0/elasticsearch-sql-5.6.8.0.zip
 ```
 
-4. 使用方式
+4.使用方式
 
 * 使用api接口操作  
 ```
