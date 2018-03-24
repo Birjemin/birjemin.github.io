@@ -20,27 +20,27 @@
 
 * 廊桥
 
-<img alt="廊桥" src ="http://upload.ouliu.net/i/20180324214856cf7fz.jpeg" width="50%" align="center" />    
+<img alt="廊桥" src ="http://upload.ouliu.net/i/20180324214856cf7fz.jpeg" width="50%" />    
 
 * 柯基，柯基。。。柯基~柯基！
 
-<img alt="柯基" src ="http://upload.ouliu.net/i/20180324222034c3wag.jpeg" width="50%" align="center" />    
+<img alt="柯基" src ="http://upload.ouliu.net/i/20180324222034c3wag.jpeg" width="50%" />    
 
-------------------美丽的分割线---------------- *_*!
+------------------美丽的分割线---------------- ^_^!
 
-<img alt="阿黄" src ="http://upload.ouliu.net/i/201803242150007q5k9.jpeg" width="50%" align="center" />    
+<img alt="阿黄" src ="http://upload.ouliu.net/i/201803242150007q5k9.jpeg" width="50%" />    
 
 * 不知道叫啥的花🌺
 
-<img alt="不知道叫啥的🌺" src ="http://upload.ouliu.net/i/20180324215037npvtr.jpeg" width="50%" align="center" />  
+<img alt="不知道叫啥的🌺" src ="http://upload.ouliu.net/i/20180324215037npvtr.jpeg" width="50%" />  
 
 ------------------美丽的分割线---------------- -_-!
 
-<img alt="不知道叫啥的🌺" src ="http://upload.ouliu.net/i/20180324215115vv9bl.jpeg" width="50%" align="center" />    
+<img alt="不知道叫啥的🌺" src ="http://upload.ouliu.net/i/20180324215115vv9bl.jpeg" width="50%" />    
 
 * 不听不说不看🙉🙊🙈
 
-<img alt="不听不说不看🙉🙊🙈" src ="http://upload.ouliu.net/i/20180324215152qcj89.jpeg" width="50%" align="center" />    
+<img alt="不听不说不看🙉🙊🙈" src ="http://upload.ouliu.net/i/20180324215152qcj89.jpeg" width="50%" />    
 
 ## 建议
 
