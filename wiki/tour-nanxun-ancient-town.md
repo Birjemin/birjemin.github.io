@@ -24,7 +24,7 @@
 
 * 柯基，柯基。。。柯基~柯基！
 
-<img alt="柯基" src ="http://upload.ouliu.net/i/20180324214856cf7fz.jpeg" width="50%" align="center" />    
+<img alt="柯基" src ="http://upload.ouliu.net/i/20180324222034c3wag.jpeg" width="50%" align="center" />    
 
 ------------------美丽的分割线---------------- *_*!
 
