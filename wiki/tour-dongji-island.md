@@ -70,7 +70,7 @@
 
 ------------------美丽的分割线---------------- Q_Q!
 
-<img alt="东极岛3" src ="http://upload.ouliu.net/i/20180325004531ficrl.jpeg " width="50%" />    
+<img alt="东极岛3" src ="http://upload.ouliu.net/i/20180325004531ficrl.jpeg" width="50%" />    
 
 ------------------美丽的分割线---------------- $_$!
 
