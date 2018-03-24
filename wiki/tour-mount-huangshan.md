@@ -10,7 +10,8 @@
 
 ## 足迹
 
-![环游](http://upload.ouliu.net/i/201803242307153ngfz.jpeg)
+<img alt="环游路线" src ="http://upload.ouliu.net/i/201803242307153ngfz.jpeg" width="50%" />  
+
 
 ```
 1.第一天跟着旅店老板去漂流了，中间手机进水了，报废了，略难过。。。
@@ -23,6 +24,7 @@
 ## 图片
 
 * 一线天之后
+
 <img alt="一线天之后" src ="http://upload.ouliu.net/i/20180324231907jpk3m.jpeg" width="50%" />  
 
 ------------------美丽的分割线---------------- ^_^!
@@ -49,7 +51,7 @@
 
 * 一线天
 
-<img alt="一线天" src="http://upload.ouliu.net/i/20180324234444ntpty.jpeg" width="50%">
+<img alt="一线天" src="http://upload.ouliu.net/i/20180324235348triqc.jpeg" width="50%">
 
 ## 建议
 
