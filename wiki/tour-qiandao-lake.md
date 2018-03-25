@@ -51,10 +51,6 @@
 
 <img alt="轮船上" src ="http://upload.ouliu.net/i/20180325213704yu93r.jpeg" width="50%" />  
 
-* 润和建国度假酒店俯瞰图
-
-<img alt="润和建国度假酒店俯瞰图" src ="http://upload.ouliu.net/i/20180325212459vb28h.jpeg" width="50%" />  
-
 * 润和建国度假酒店
 
 <img alt="润和建国度假酒店" src ="http://upload.ouliu.net/i/201803252138179eqth.jpeg" width="50%" />  
