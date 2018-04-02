@@ -57,7 +57,7 @@ composer require birjemin/blueprint
     * @Get("/list")
     * @Transaction({
     *      @Request(identifier="page=1&type=1"),
-    *      @Response(200, body={"msg": "返回成功","code": 200,"page": 1,"timestamp": "1522673813","data":{"result":{{"price": "2200","type": "福特","notice": "豪车"},{"price": "2200","type": "大众","notice": "车"}}})
+    *      @Response(200, body={"msg": "返回成功","code": 200,"page": 1,"timestamp": "1522673813","data":{"result":[{"price": "2200","type": "福特","notice": "豪车"},{"price": "2200","type": "大众","notice": "车"}]}})
     * })
     * @Parameters({
     *      @Parameter("page", type="integer", required=true, description="分页", default=1),
