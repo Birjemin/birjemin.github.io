@@ -42,37 +42,37 @@ composer require birjemin/blueprint
 4. 给接口添加注释，添加在Controller入口方法前面(详细的注释方式请查看[https://github.com/dingo/api/wiki/API-Blueprint-Documentation](https://github.com/dingo/api/wiki/API-Blueprint-Documentation))。
 
 ```
-/**
- * Class CarsController
- * @package App\Http\Controllers
- * @Resource("CarResource", uri="/api/cars")
-*/
-class CarController extends Controller
-{
-/**
-  * cars list
-  *
-  * Get current cars list
-  *
-  * @Get("/list")
-  * @Transaction({
-  *      @Request(identifier="page=1&type=1"),
-  *      @Response(200, body={"msg": "返回成功","code": 200,"page": 1,"timestamp": "1522673813","data":{"result":{{"price": "2200","type": "福特","notice": "豪车"},{"price": "2200","type": "大众","notice": "车"}}}})
-  * })
-  * @Parameters({
-  *      @Parameter("page", type="integer", required=true, description="分页", default=1),
-  *      @Parameter("search", type="string", required=false, description="搜索条件"),
-  *      @Parameter("type", type="integer", required=true, description="汽车类型", default=1, members={
-  *          @Member(value="1", description="新车"),
-  *          @Member(value="2", description="旧车")
-  *      })
-  * })
+  /**
+  * Class CarsController
+  * @package App\Http\Controllers
+  * @Resource("CarResource", uri="/api/cars")
   */
-  public function index()
+  class CarController extends Controller
   {
-    return json_decode('{"succ":true,"code":0,"message":"","data":{"result":true}})');
+  /**
+    * cars list
+    *
+    * Get current cars list
+    *
+    * @Get("/list")
+    * @Transaction({
+    *      @Request(identifier="page=1&type=1"),
+    *      @Response(200, body={"msg": "返回成功","code": 200,"page": 1,"timestamp": "1522673813","data":{"result":{{"price": "2200","type": "福特","notice": "豪车"},{"price": "2200","type": "大众","notice": "车"}}})
+    * })
+    * @Parameters({
+    *      @Parameter("page", type="integer", required=true, description="分页", default=1),
+    *      @Parameter("search", type="string", required=false, description="搜索条件"),
+    *      @Parameter("type", type="integer", required=true, description="汽车类型", default=1, members={
+    *          @Member(value="1", description="新车"),
+    *          @Member(value="2", description="旧车")
+    *      })
+    * })
+    */
+    public function index()
+    {
+      return json_decode('{"succ":true,"code":0,"message":"","data":{"result":true}})');
+    }
   }
-}
 ```
 
 5. 创建`apib`文件
