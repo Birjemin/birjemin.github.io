@@ -20,14 +20,14 @@ API Blueprint is simple and accessible to everybody involved in the API lifecycl
 
 ![npm版本](http://upload.ouliu.net/i/20180323150537lblhz.png)
 
-1. 安装aglio（npm是啥？？？自己问前端同学吧。。）
+1.安装aglio（npm是啥？？？自己问前端同学吧。。）
 
 ```
 npm install -g aglio
 ```
 请检查是否安装成功。
 
-2. 给laravel项目引入composer包（包已经提交，不过国内镜像还没同步）
+2.给laravel项目引入composer包（包已经提交，不过国内镜像还没同步）
 
 ```
 composer require birjemin/blueprint dev-master
@@ -37,9 +37,9 @@ or
 composer require birjemin/blueprint
 ```
 
-3. 在`app.php`中添加`BlueprintServiceProvider::class`
+3.在`app.php`中添加`BlueprintServiceProvider::class`
 
-4. 给接口添加注释，添加在Controller入口方法前面(详细的注释方式请查看[https://github.com/dingo/api/wiki/API-Blueprint-Documentation](https://github.com/dingo/api/wiki/API-Blueprint-Documentation))。
+4.给接口添加注释，添加在Controller入口方法前面(详细的注释方式请查看[https://github.com/dingo/api/wiki/API-Blueprint-Documentation](https://github.com/dingo/api/wiki/API-Blueprint-Documentation))。
 
 ```
   /**
@@ -77,25 +77,25 @@ composer require birjemin/blueprint
 
 > `@Response(200, body={...}`中的`[`和`]`要替换成`{`和`}`，这里不替换是因为我的博客使用了`jekyll`,github报错啦~~
 
-5. 创建`apib`文件
+5.创建`apib`文件
 
 ```
 php artisan birjemin:docs --output-file=tianming.apib
 ```
 项目下面生成了tianming.apib文件，这个是一个markdown文件，可以直接用markdown编辑器打开，下面讲一下aglio的web服务。
 
-6. 运行aglio服务(详细的命令可以去[https://github.com/danielgtaylor/aglio](https://github.com/danielgtaylor/aglio)查看)
+6.运行aglio服务(详细的命令可以去[https://github.com/danielgtaylor/aglio](https://github.com/danielgtaylor/aglio)查看)
 
 ```
 aglio -i tianming.apib -s
 ```
 
-7. 访问:`http://27.0.0.1:3000`(端口可以自定义，这个是默认的)
+7.访问:`http://27.0.0.1:3000`(端口可以自定义，这个是默认的)
 
 ![http://upload.ouliu.net/i/2018040222280130t9l.png](http://upload.ouliu.net/i/2018040222280130t9l.png)
 
 ## 注意点
-1. 返回的数据不可以json如果是数组,`{}`代替`[]`这个符号，比如示例中的。
+1.返回的数据不可以json如果是数组,`{}`代替`[]`这个符号，比如示例中的。
 
 ```
  {"msg": "返回成功","code": 200,"page": 1,"timestamp": "1522673813","data":{"result":[{"price": "2200","type": "福特","notice": "豪车"},{"price": "2200","type": "大众","notice": "车"}]}}
@@ -103,9 +103,9 @@ aglio -i tianming.apib -s
 就要将里面的中括号替换成大括号！
 
 
-2. 这些注释写错了会报错哦~
+2.这些注释写错了会报错哦~
 
-3. 和apidoc的注释有区别~~
+3.和apidoc的注释有区别~~
 
 ## 补充文档
 * [https://apiblueprint.org/](https://apiblueprint.org/)
