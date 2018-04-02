@@ -95,7 +95,9 @@ aglio -i tianming.apib -s
 ## 注意点
 1. 返回的数据不可以json如果是数组,`{}`代替`[]`这个符号，比如示例中的。
 
-> {"msg": "返回成功","code": 200,"page": 1,"timestamp": "1522673813","data":{"result":{{"price": "2200","type": "福特","notice": "豪车"},{"price": "2200","type": "大众","notice": "车"}}}}
+```
+ {"msg": "返回成功","code": 200,"page": 1,"timestamp": "1522673813","data":{"result":[{"price": "2200","type": "福特","notice": "豪车"},{"price": "2200","type": "大众","notice": "车"}]}}
+```
 
 
 2. 这些注释写错了会报错哦~
