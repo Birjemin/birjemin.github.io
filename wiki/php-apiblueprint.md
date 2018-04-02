@@ -1,4 +1,4 @@
-# ApiBlueprint的使用
+# ApiBlueprint在laravel框架中的使用
 
 ## 说明
 
@@ -9,24 +9,25 @@ API Blueprint is simple and accessible to everybody involved in the API lifecycl
 
 ## 背景
 目前和前端联调、其他部门联调使用的方式有：
-1.使用MarkDown出接口文档，放在共同的gitlab仓库上面，前后端都可以访问（只要约定好谁修改就好了，避免两个人都修改出现差异），作为一个经常写方法注释的好程序员来说（其实你的leader也会要求你），要在每一个接口上面写上几行方法注释，注明这个方法是做啥的，不然别人接手不便捷 ^_^；
 
-2.使用apiDoc工具（使用方法可以查看：http://birjemin.com/wiki/php-apidoc），将相应的接口规范以注释的方式写在每一个方法上面，然后生成相应的apiDoc文档（只需要写一下注释，不需要再写接口文档啦~），通过node服务搭建一个服务环境，前端直接访问我的开发机进行查看啦~
+1. 使用MarkDown出接口文档，放在共同的gitlab仓库上面，前后端都可以访问（只要约定好谁修改就好了，避免两个人都修改出现差异），作为一个经常写方法注释的好程序员来说（其实你的leader也会要求你），要在每一个接口上面写上几行方法注释，注明这个方法是做啥的，不然别人接手不便捷 ^_^；
 
-3.使用`birjemin/blueprint`+`aglio`/`macdown`...组合，比如在接口的方法上面按照一定的格式进行注释，然后使用该composer包生成apib文件，这个文件是一个遵循blueprint接口规范的markdown文件。可以使用aglio插件搭建一个web服务（这个插件支持实时更新，不需要刷新页面），也可以使用macdown编辑器查看这个文件。
+2. 使用apiDoc工具（使用方法可以查看：[http://birjemin.com/wiki/php-apidoc](http://birjemin.com/wiki/php-apidoc)），将相应的接口规范以注释的方式写在每一个方法上面，然后生成相应的apiDoc文档（只需要写一下注释，不需要再写接口文档啦~），通过node服务搭建一个服务环境，前端直接访问我的开发机进行查看啦~
 
-## 配置方式
+3. 使用`birjemin/blueprint`+`aglio`/`macdown`...组合，比如在接口的方法上面按照一定的格式进行注释，然后使用该composer包生成apib文件，这个文件是一个遵循blueprint接口规范的markdown文件。可以使用aglio插件搭建一个web服务（这个插件支持实时更新，不需要刷新页面），也可以使用macdown编辑器查看这个文件。
+
+## 搭建步骤
 
 ![npm版本](http://upload.ouliu.net/i/20180323150537lblhz.png)
 
-1.安装aglio（npm是啥？？？自己问前端同学吧。。）
+1. 安装aglio（npm是啥？？？自己问前端同学吧。。）
 
 ```
 npm install -g aglio
 ```
 请检查是否安装成功。
 
-2.给laravel项目引入composer包（包已经提交，不过国内镜像还没同步）
+2. 给laravel项目引入composer包（包已经提交，不过国内镜像还没同步）
 
 ```
 composer require birjemin/blueprint dev-master
@@ -36,9 +37,9 @@ or
 composer require birjemin/blueprint
 ```
 
-3.在app.php中添加`BlueprintServiceProvider::class`
+3. 在`app.php`中添加`BlueprintServiceProvider::class`
 
-4.给接口添加注释，添加在Controller入口方法前面(详细的注释方式请查看[https://github.com/dingo/api/wiki/API-Blueprint-Documentation](https://github.com/dingo/api/wiki/API-Blueprint-Documentation))。
+4. 给接口添加注释，添加在Controller入口方法前面(详细的注释方式请查看[https://github.com/dingo/api/wiki/API-Blueprint-Documentation](https://github.com/dingo/api/wiki/API-Blueprint-Documentation))。
 
 ```
 /**
@@ -74,20 +75,20 @@ class CarController extends Controller
 }
 ```
 
-5.创建apid文件
+5. 创建`apib`文件
 
 ```
 php artisan birjemin:docs --output-file=tianming.apib
 ```
 项目下面生成了tianming.apib文件，这个是一个markdown文件，可以直接用markdown编辑器打开，下面讲一下aglio的web服务。
 
-6.运行aglio服务(详细的命令可以去[https://github.com/danielgtaylor/aglio](https://github.com/danielgtaylor/aglio)查看)
+6. 运行aglio服务(详细的命令可以去[https://github.com/danielgtaylor/aglio](https://github.com/danielgtaylor/aglio)查看)
 
 ```
 aglio -i tianming.apib -s
 ```
 
-7.访问:`http://27.0.0.1:3000`(端口可以自定义，这个是默认的)
+7. 访问:`http://27.0.0.1:3000`(端口可以自定义，这个是默认的)
 
 ![http://upload.ouliu.net/i/2018040222280130t9l.png](http://upload.ouliu.net/i/2018040222280130t9l.png)
 
