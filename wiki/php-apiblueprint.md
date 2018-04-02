@@ -102,3 +102,4 @@ aglio -i tianming.apib -s
 3. [https://github.com/danielgtaylor/aglio](https://github.com/danielgtaylor/aglio)
 4. [https://github.com/dingo/blueprint](https://github.com/dingo/blueprint)
 5. [https://github.com/dingo/api/wiki/API-Blueprint-Documentation](https://github.com/dingo/api/wiki/API-Blueprint-Documentation)
+6. [https://github.com/monkeycraps/blueprint](https://github.com/monkeycraps/blueprint)
