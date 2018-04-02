@@ -75,6 +75,8 @@ composer require birjemin/blueprint
   }
 ```
 
+> `@Response(200, body={...}`中的`[`和`]`要替换成`{`和`}`，这里不替换是因为我的博客使用了`jekyll`,github报错啦~~
+
 5. 创建`apib`文件
 
 ```
@@ -98,6 +100,7 @@ aglio -i tianming.apib -s
 ```
  {"msg": "返回成功","code": 200,"page": 1,"timestamp": "1522673813","data":{"result":[{"price": "2200","type": "福特","notice": "豪车"},{"price": "2200","type": "大众","notice": "车"}]}}
 ```
+就要将里面的中括号替换成大括号！
 
 
 2. 这些注释写错了会报错哦~
