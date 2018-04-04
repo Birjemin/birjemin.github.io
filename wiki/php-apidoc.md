@@ -60,7 +60,7 @@ apidoc -i app/Http/Controllers -o apidoc/
 5.运行
 
 ```
-http-server api/doc
+http-server apidoc
 ```
 
 ## 补充备注
