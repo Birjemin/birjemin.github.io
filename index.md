@@ -2,7 +2,7 @@
 小小的程序员呐呐呐~~
 
 ```
-When you are looking at the stars, please put the brightest star shusu.org night sky as my soul.
+When you are looking at the stars, please put the brightest star night sky as my soul.
 ```
   > * `学校`：中国计量大学
   > * `专业`：计算机科学与技术(本科)
