@@ -19,23 +19,23 @@
 
 * 小黄鸭
 
-<img alt="假的小鸭子" src ="http://upload.ouliu.net/i/201804182347232fkec.jpeg" width="50%" />    
+<img alt="假的小鸭子" src ="http://upload.ouliu.net/i/201804182347232fkec.jpeg" width="50%" />
 
 * 第一次做“地铁”
 
-<img alt="轨道交通" src ="http://upload.ouliu.net/i/20180418234829t7qhs.jpeg" width="50%" />    
+<img alt="轨道交通" src ="http://upload.ouliu.net/i/20180418234829t7qhs.jpeg" width="50%" />
 
 * 秦淮河
 
-<img alt="秦淮河" src ="http://upload.ouliu.net/i/20180418234913xf6r0.jpeg" width="50%" />    
+<img alt="秦淮河" src ="http://upload.ouliu.net/i/20180418234913xf6r0.jpeg" width="50%" />
 
 * 秦淮河2
 
-<img alt="秦淮河2" src ="http://upload.ouliu.net/i/20180418235001t1k15.jpeg" width="50%" />    
+<img alt="秦淮河2" src ="http://upload.ouliu.net/i/20180418235001t1k15.jpeg" width="50%" />
 
 * 秦淮河3
 
-<img alt="秦淮河3" src ="http://upload.ouliu.net/i/201804182350238f65r.jpeg" width="50%" />    
+<img alt="秦淮河3" src ="http://upload.ouliu.net/i/201804182350238f65r.jpeg" width="50%" />
 
 ## 建议
 
