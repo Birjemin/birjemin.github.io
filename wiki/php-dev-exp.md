@@ -24,7 +24,7 @@
     * Service - 业务
 
   2. 升级版本
-  
+
   [http://birjemin.com/wiki/php-ouran](http://birjemin.com/wiki/php-ouran)
 
 ## Laravel一些注意点
@@ -57,7 +57,8 @@
   6. 交接QA
 
 ## 性能优化
-  1. 数据层面
+
+  1.数据层面
 
     * 使用ssdb
     * 添加索引，读写分离，拆表,sql语句优化
@@ -67,13 +68,13 @@
     * 分页获取数据
     * 使用es进行大量数据的聚合运算
 
-  2. 业务方面
-
+  2.业务方面
+  
     * 异步代替同步
     * 限流
     * 砍需求呗
 
-  3. 其他
+  3.其他
 
     * 开启opcache
 
