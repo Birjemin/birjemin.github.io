@@ -9,7 +9,7 @@
 
 ## 足迹
 
-<!-- <img alt="环游路线" src ="http://upload.ouliu.net/i/20180325002506dex89.jpeg" width="50%" />   -->
+<!-- <img alt="环游路线" src ="./../assets/images/20180325002506dex89.jpeg" width="50%" />   -->
 
 ```
 1.d

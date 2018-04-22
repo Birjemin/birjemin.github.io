@@ -4,7 +4,7 @@
 纯属python小练习
 
 ## 文件结构
-![文件结构](http://upload.ouliu.net/i/20180201223933hybum.png)
+![文件结构](./../assets/images/20180201223933hybum.png)
 
 * html_downloader.py - 下载网页html内容
 

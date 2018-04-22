@@ -10,7 +10,7 @@
 
 ## 足迹
 
-<img alt="环游路线" src ="http://upload.ouliu.net/i/20180325002506dex89.jpeg" width="50%" />  
+<img alt="环游路线" src ="./../assets/images/20180325002506dex89.jpeg" width="50%" />  
 
 ```
 1.周五晚上下班直接去南站出发，大概9点半回到那边，然后打车去宾馆（红色线）;
@@ -26,61 +26,61 @@
 
 * 轮船上
 
-<img alt="轮船上" src ="http://upload.ouliu.net/i/20180325003848lnvcs.jpeg" width="50%" />  
+<img alt="轮船上" src ="./../assets/images/20180325003848lnvcs.jpeg" width="50%" />  
 
 * 港口上
 
-<img alt="港口" src ="http://upload.ouliu.net/i/20180325004017bqdfy.jpeg" width="50%" />    
+<img alt="港口" src ="./../assets/images/20180325004017bqdfy.jpeg" width="50%" />    
 
 * 东福岛上
 
-<img alt="东福岛" src ="http://upload.ouliu.net/i/20180325004055n6haf.jpeg" width="50%" />    
+<img alt="东福岛" src ="./../assets/images/20180325004055n6haf.jpeg" width="50%" />    
 
 ------------------美丽的分割线---------------- ^_^!
 
-<img alt="东福岛2" src ="http://upload.ouliu.net/i/20180325004140d5ehw.jpeg" width="50%" />    
+<img alt="东福岛2" src ="./../assets/images/20180325004140d5ehw.jpeg" width="50%" />    
 
 ------------------美丽的分割线---------------- -_-!
 
-<img alt="东福岛3" src ="http://upload.ouliu.net/i/20180325004223tpkyj.jpeg" width="50%" />    
+<img alt="东福岛3" src ="./../assets/images/20180325004223tpkyj.jpeg" width="50%" />    
 
 ------------------美丽的分割线---------------- ^v^!
 
-<img alt="东福岛4" src ="http://upload.ouliu.net/i/20180325004257by78y.jpeg" width="50%" />    
+<img alt="东福岛4" src ="./../assets/images/20180325004257by78y.jpeg" width="50%" />    
 
 ------------------美丽的分割线---------------- '_'!
 
-<img alt="东福岛5" src ="http://upload.ouliu.net/i/20180325004319yrkyw.jpeg" width="50%" />    
+<img alt="东福岛5" src ="./../assets/images/20180325004319yrkyw.jpeg" width="50%" />    
 
 ------------------美丽的分割线---------------- @_@!
 
-<img alt="东福岛6" src ="http://upload.ouliu.net/i/201803250043435t73x.jpeg" width="50%" />    
+<img alt="东福岛6" src ="./../assets/images/201803250043435t73x.jpeg" width="50%" />    
 
 ------------------美丽的分割线---------------- O_O!
 
-<img alt="东福岛7" src ="http://upload.ouliu.net/i/20180325004652uw3ld.jpeg" width="50%" />    
+<img alt="东福岛7" src ="./../assets/images/20180325004652uw3ld.jpeg" width="50%" />    
 
 * 东极岛上
 
-<img alt="东极岛" src ="http://upload.ouliu.net/i/201803250044178lx2s.jpeg" width="50%" />    
+<img alt="东极岛" src ="./../assets/images/201803250044178lx2s.jpeg" width="50%" />    
 
 ------------------美丽的分割线---------------- -v-!
 
-<img alt="东极岛2" src ="http://upload.ouliu.net/i/20180325004458h8bhm.jpeg" width="50%" />    
+<img alt="东极岛2" src ="./../assets/images/20180325004458h8bhm.jpeg" width="50%" />    
 
 ------------------美丽的分割线---------------- Q_Q!
 
-<img alt="东极岛3" src ="http://upload.ouliu.net/i/20180325004531ficrl.jpeg" width="50%" />    
+<img alt="东极岛3" src ="./../assets/images/20180325004531ficrl.jpeg" width="50%" />    
 
 ------------------美丽的分割线---------------- $_$!
 
 * 青浜岛上
 
-<img alt="青浜岛" src ="http://upload.ouliu.net/i/2018032500460396uzb.jpeg" width="50%" />    
+<img alt="青浜岛" src ="./../assets/images/2018032500460396uzb.jpeg" width="50%" />    
 
 ------------------美丽的分割线---------------- QvQ!
 
-<img alt="青浜岛2" src ="http://upload.ouliu.net/i/20180325004731vjv23.jpeg" width="50%" />    
+<img alt="青浜岛2" src ="./../assets/images/20180325004731vjv23.jpeg" width="50%" />    
 
 ## 建议
 

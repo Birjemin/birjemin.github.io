@@ -6,7 +6,7 @@ The Zend Engine is the open source scripting engine that interprets the PHP prog
 ```
 Zend引擎是开源的解释php语言的脚本引擎。
 
-![PHP执行示意图](http://upload.ouliu.net/i/20180109230901rgw2i.gif)
+![PHP执行示意图](./../assets/images/20180109230901rgw2i.gif)
 
 Zend有两部分组成，即编译器和执行器。编译器负责将PHP代码编译为抽象语法树，然后进一步编译为可执行的opcodes，这个过程相当于GCC的工作，编译器是一个语言实现的基础；执行器负责执行编译器输出的Opcodes，也就是执行PHP脚本中编写的代码逻辑。
 Opcode是将PHP代码编译产生的Zend虚拟机可识别的指令，php7共有173个Opcode，定义在zend_vm_opcodes.h中，PHP中的所有语法实现都是由这些opcode组成的。
@@ -34,7 +34,7 @@ Opcode是一种PHP脚本编译后的中间语言，就像Java的ByteCode,或者.
 现在有的Cache比如APC、Opcache(APC止步于PHP 5.4，Zend Opcache从PHP 5.5 开始集成，取代APC。),可以使得PHP缓存住Opcodes，这样，每次有请求来临的时候，就不需要重复执行前面3步，从而能大幅的提高PHP的执行速度。
 如下图：
 
-![http://upload.ouliu.net/i/20180110001550q4qct.png](http://upload.ouliu.net/i/20180110001550q4qct.png)
+![./../assets/images/20180110001550q4qct.png](./../assets/images/20180110001550q4qct.png)
 
 ## 小插曲
 有一次线上发代码了(修改了数据库)，但是数据库里面数据没进来，非常诡异，怀疑是代码没有发成功，后来leader在群里对运维说Opcache（原理就是缓存Opcodes）没有更新。。。小坑小坑

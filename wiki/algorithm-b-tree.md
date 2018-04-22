@@ -47,9 +47,9 @@ In a B-Tree, the new element must be added only at leaf node. That means, always
 * Step 5: If that leaf node is already full, then split that leaf node by sending middle value to its parent node. Repeat tha same until sending value is fixed into a node.
 * Step 6: If the spilting is occuring to the root node, then the middle value becomes new root node for the tree and the height of the tree is increased by one.
 
-![B树插入数据的gif](http://upload.ouliu.net/i/201801111442186jktg.gif)
+![B树插入数据的gif](./../assets/images/201801111442186jktg.gif)
 
-![B+树插入数据的gif](http://upload.ouliu.net/i/20180111144313buplo.gif)
+![B+树插入数据的gif](./../assets/images/20180111144313buplo.gif)
 
 ## 删除方法
 参考8的链接,有图有真相，这里就摘录一些重点文字条件吧。
@@ -113,7 +113,7 @@ Here you can straightaway delete k from x.
 ## B-树和B+树区别
 B和B+树的区别在于，B+树的非叶子结点只包含key信息，不包含data，每个节点的指针上限为2t而不是2t+1.所有的叶子结点和相连的节点使用链表相连，便于区间查找和遍历。
 
-![B树和B+树的区别](http://upload.ouliu.net/i/201801072121242o53t.png)
+![B树和B+树的区别](./../assets/images/201801072121242o53t.png)
 
 ## 综述
 磁盘存储和mysql的索引这一块用的比较多，以空间换时间来提升查找速度。（图片基本是从参考链接那边拿过来的，站在前人的肩膀上。）

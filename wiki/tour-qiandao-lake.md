@@ -12,7 +12,7 @@
 
 ## 足迹
 
-<img alt="环游路线" src ="http://upload.ouliu.net/i/201803252059287sp3h.jpeg" width="50%" />  
+<img alt="环游路线" src ="./../assets/images/201803252059287sp3h.jpeg" width="50%" />  
 
 ```
 1.第一天早上出发去千岛湖~~~，由于下雨，没干啥，中午达到，只在小吃广场吃了米庚（因人而异，反正我很喜欢吃）🍚;
@@ -25,39 +25,39 @@
 
 * 小吃广场附近
 
-<img alt="小吃广场附近" src ="http://upload.ouliu.net/i/20180325211642a5ln1.jpeg" width="50%" />  
+<img alt="小吃广场附近" src ="./../assets/images/20180325211642a5ln1.jpeg" width="50%" />  
 
 * 等了两个半小时的🐟
 
-<img alt="等了两个半小时的🐟" src ="http://upload.ouliu.net/i/20180325211820medp5.jpeg" width="50%" />  
+<img alt="等了两个半小时的🐟" src ="./../assets/images/20180325211820medp5.jpeg" width="50%" />  
 
 * 鱼乐岛的🐟
 
-<img alt="鱼乐岛的🐟" src ="http://upload.ouliu.net/i/20180325211956g2ogm.jpeg" width="50%" />  
+<img alt="鱼乐岛的🐟" src ="./../assets/images/20180325211956g2ogm.jpeg" width="50%" />  
 
 * 龙珠广场🐲
 
-<img alt="龙珠广场" src ="http://upload.ouliu.net/i/201803252121487agj1.jpeg" width="50%" />  
+<img alt="龙珠广场" src ="./../assets/images/201803252121487agj1.jpeg" width="50%" />  
 
 * 忘记在哪里了
 
-<img alt="忘记在哪里了" src ="http://upload.ouliu.net/i/20180325212337y6o9t.jpeg" width="50%" />  
+<img alt="忘记在哪里了" src ="./../assets/images/20180325212337y6o9t.jpeg" width="50%" />  
 
 * 润和建国度假酒店俯瞰图
 
-<img alt="润和建国度假酒店俯瞰图" src ="http://upload.ouliu.net/i/20180325212459vb28h.jpeg" width="50%" />  
+<img alt="润和建国度假酒店俯瞰图" src ="./../assets/images/20180325212459vb28h.jpeg" width="50%" />  
 
 * 轮船上
 
-<img alt="轮船上" src ="http://upload.ouliu.net/i/20180325213704yu93r.jpeg" width="50%" />  
+<img alt="轮船上" src ="./../assets/images/20180325213704yu93r.jpeg" width="50%" />  
 
 * 润和建国度假酒店
 
-<img alt="润和建国度假酒店" src ="http://upload.ouliu.net/i/201803252138179eqth.jpeg" width="50%" />  
+<img alt="润和建国度假酒店" src ="./../assets/images/201803252138179eqth.jpeg" width="50%" />  
 
 * 润和建国度假酒店2
 
-<img alt="润和建国度假酒店2" src ="http://upload.ouliu.net/i/201803252138452iz7f.jpeg" width="50%" />  
+<img alt="润和建国度假酒店2" src ="./../assets/images/201803252138452iz7f.jpeg" width="50%" />  
 
 ## 建议
 

@@ -18,7 +18,7 @@ API Blueprint is simple and accessible to everybody involved in the API lifecycl
 
 ## 搭建步骤
 
-![npm版本](http://upload.ouliu.net/i/20180323150537lblhz.png)
+![npm版本](./../assets/images/20180323150537lblhz.png)
 
 1.安装aglio（npm是啥？？？自己问前端同学吧。。）
 
@@ -92,7 +92,7 @@ aglio -i tianming.apib -s
 
 7.访问:`http://27.0.0.1:3000`(端口可以自定义，这个是默认的)
 
-![http://upload.ouliu.net/i/2018040222280130t9l.png](http://upload.ouliu.net/i/2018040222280130t9l.png)
+![./../assets/images/2018040222280130t9l.png](./../assets/images/2018040222280130t9l.png)
 
 ## 注意点
 1.返回的数据不可以json如果是数组,`{}`代替`[]`这个符号，比如示例中的。

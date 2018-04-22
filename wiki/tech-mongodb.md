@@ -1,5 +1,5 @@
 # MongoDB的使用
-![MongoDB](http://upload.ouliu.net/i/20180310221445e12ar.png)
+![MongoDB](./../assets/images/20180310221445e12ar.png)
 
 ## 简介
 MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写。旨在为 WEB 应用提供可扩展的高性能数据存储解决方案。MongoDB 是一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。
@@ -65,7 +65,7 @@ MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写�
 
 ## 备注
 CAP:
-![CAP](http://upload.ouliu.net/i/20180311003351ij0ts.png)
+![CAP](./../assets/images/20180311003351ij0ts.png)
 
 * 一致性(Consistency) (所有节点在同一时间具有相同的数据)
 * 可用性(Availability) (保证每个请求不管成功或者失败都有响应)

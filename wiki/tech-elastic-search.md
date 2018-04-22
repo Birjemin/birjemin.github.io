@@ -1,5 +1,5 @@
 # ElasticSearch的使用
-![示意图](http://upload.ouliu.net/i/20180322170506wcput.jpeg)
+![示意图](./../assets/images/20180322170506wcput.jpeg)
 
 ## 简介
 ElasticSearch是一个基于Lucene的搜索服务器。它提供了一个分布式多用户能力的全文搜索引擎，基于RESTful web接口。
@@ -11,7 +11,7 @@ brew install elasticsearch@5.6
 
 1.结果：
 
-![查看版本](http://upload.ouliu.net/i/20180322172851v0vek.jpeg)
+![查看版本](./../assets/images/20180322172851v0vek.jpeg)
 
 2.开启、关闭、重启es
 ```
@@ -22,7 +22,7 @@ brew services restart elasticsearch@5.6
 
 3.灌入数据方式(测试时我使用的是postman)
 
-![灌入数据示例](http://upload.ouliu.net/i/201803221803076lmb1.png)
+![灌入数据示例](./../assets/images/201803221803076lmb1.png)
 
 ## 安装elasticsearch-head
 
@@ -40,7 +40,7 @@ Click the extension icon in the toolbar of your web browser.
 
 3.结果：
 
-![查看](http://upload.ouliu.net/i/20180322173110qmjkg.jpeg)
+![查看](./../assets/images/20180322173110qmjkg.jpeg)
 
 ## 安装elasticsearch-sql
 
@@ -73,7 +73,7 @@ node node-server.js
 ```
 所以下载zip包，解压到自己的目录下面，比如我的目录是这样：
 
-![sql目录](http://upload.ouliu.net/i/2018032217472808wow.png)
+![sql目录](./../assets/images/2018032217472808wow.png)
 
 然后按照手册所说运行。（请提前安装好node啦~~）
 
@@ -104,7 +104,7 @@ var server = app.listen(siteConfiguration.port)
 
 * web视图查看数据
 
-![sql数据查看](http://upload.ouliu.net/i/20180322180709pwhqo.jpeg)
+![sql数据查看](./../assets/images/20180322180709pwhqo.jpeg)
 
 ## 手册
 https://www.elastic.co/guide/en/elasticsearch/guide/master/create-doc.html

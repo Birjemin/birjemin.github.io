@@ -1,5 +1,5 @@
 # 类的设计原则-SOLID
-![示意图](http://upload.ouliu.net/i/20180303164338xtbf5.jpeg)
+![示意图](./../assets/images/20180303164338xtbf5.jpeg)
 
 ## 简介
 SOLID:

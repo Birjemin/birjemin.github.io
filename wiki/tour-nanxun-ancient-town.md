@@ -24,31 +24,31 @@
 通津桥位于过去南浔镇中心，是十字形水系的交叉点。明清时期，通津桥畔成为繁华的丝市。桥南面有一条小街名叫丝行垛，素以经营蚕丝业著称，曾是历史上“辑里湖丝”的集散中心。
 ```
 
-<img alt="通津桥2" src ="http://upload.ouliu.net/i/20180324214827k7q6t.jpeg" width="50%" />  
+<img alt="通津桥2" src ="./../assets/images/20180324214827k7q6t.jpeg" width="50%" />  
 
 * 廊桥
 
-<img alt="廊桥" src ="http://upload.ouliu.net/i/20180324214856cf7fz.jpeg" width="50%" />    
+<img alt="廊桥" src ="./../assets/images/20180324214856cf7fz.jpeg" width="50%" />    
 
 * 柯基，柯基。。。柯基~柯基！
 
-<img alt="柯基" src ="http://upload.ouliu.net/i/20180324222034c3wag.jpeg" width="50%" />    
+<img alt="柯基" src ="./../assets/images/20180324222034c3wag.jpeg" width="50%" />    
 
 ------------------美丽的分割线---------------- ^_^!
 
-<img alt="阿黄" src ="http://upload.ouliu.net/i/201803242150007q5k9.jpeg" width="50%" />    
+<img alt="阿黄" src ="./../assets/images/201803242150007q5k9.jpeg" width="50%" />    
 
 * 不知道叫啥的花🌺
 
-<img alt="不知道叫啥的🌺" src ="http://upload.ouliu.net/i/20180324215037npvtr.jpeg" width="50%" />  
+<img alt="不知道叫啥的🌺" src ="./../assets/images/20180324215037npvtr.jpeg" width="50%" />  
 
 ------------------美丽的分割线---------------- -_-!
 
-<img alt="不知道叫啥的🌺" src ="http://upload.ouliu.net/i/20180324215115vv9bl.jpeg" width="50%" />    
+<img alt="不知道叫啥的🌺" src ="./../assets/images/20180324215115vv9bl.jpeg" width="50%" />    
 
 * 不听不说不看🙉🙊🙈
 
-<img alt="不听不说不看🙉🙊🙈" src ="http://upload.ouliu.net/i/20180324215152qcj89.jpeg" width="50%" />    
+<img alt="不听不说不看🙉🙊🙈" src ="./../assets/images/20180324215152qcj89.jpeg" width="50%" />    
 
 ## 建议
 

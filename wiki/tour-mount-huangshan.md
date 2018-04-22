@@ -10,7 +10,7 @@
 
 ## 足迹
 
-<img alt="环游路线" src ="http://upload.ouliu.net/i/201803242307153ngfz.jpeg" width="50%" />  
+<img alt="环游路线" src ="./../assets/images/201803242307153ngfz.jpeg" width="50%" />  
 
 ```
 1.第一天跟着旅店老板去漂流了，挺刺激的，中间手机进水了，报废了，略难过。。。☹️
@@ -25,39 +25,39 @@
 
 * 一线天之后
 
-<img alt="一线天之后" src ="http://upload.ouliu.net/i/20180324231907jpk3m.jpeg" width="50%" />  
+<img alt="一线天之后" src ="./../assets/images/20180324231907jpk3m.jpeg" width="50%" />  
 
 ------------------美丽的分割线---------------- ^_^!
 
-<img alt="一线天之后" src ="http://upload.ouliu.net/i/20180324232037vivh5.jpeg" width="50%" />    
+<img alt="一线天之后" src ="./../assets/images/20180324232037vivh5.jpeg" width="50%" />    
 
 * 飞来石上
 
-<img alt="飞来石上" src ="http://upload.ouliu.net/i/20180324232215bpgsq.jpeg" width="50%"/>    
+<img alt="飞来石上" src ="./../assets/images/20180324232215bpgsq.jpeg" width="50%"/>    
 
 * 白云宾馆日落的风景
 
-<img alt="白云宾馆日落的风景" src ="http://upload.ouliu.net/i/20180324232512s6ugg.jpeg" width="50%" />    
+<img alt="白云宾馆日落的风景" src ="./../assets/images/20180324232512s6ugg.jpeg" width="50%" />    
 
 * 玉屏索道上
 
-<img alt="玉屏索道上" src="http://upload.ouliu.net/i/20180324232644qdp8x.jpeg" width="50%">
+<img alt="玉屏索道上" src="./../assets/images/20180324232644qdp8x.jpeg" width="50%">
 
 * 光明顶上
 
-<img alt="光明顶" src="http://upload.ouliu.net/i/20180324234444ntpty.jpeg" width="50%">
+<img alt="光明顶" src="./../assets/images/20180324234444ntpty.jpeg" width="50%">
 
 * 一线天
 
-<img alt="一线天" src="http://upload.ouliu.net/i/20180324235348triqc.jpeg" width="50%">
+<img alt="一线天" src="./../assets/images/20180324235348triqc.jpeg" width="50%">
 
 * 排云溪站
 
-<img alt="排云溪" src="http://upload.ouliu.net/i/20180324235742e2idp.jpeg" width="50%">
+<img alt="排云溪" src="./../assets/images/20180324235742e2idp.jpeg" width="50%">
 
 ------------------美丽的分割线---------------- -_-!
 
-<img alt="排云溪" src="http://upload.ouliu.net/i/20180325000147azp22.jpeg" width="50%">
+<img alt="排云溪" src="./../assets/images/20180325000147azp22.jpeg" width="50%">
 
 ## 建议
 

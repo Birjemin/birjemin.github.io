@@ -20,10 +20,12 @@ brew install thrift
 ## 示例
 ### 前提
 * thrift版本：
-![http://upload.ouliu.net/i/20180223002626ad08g.png](http://upload.ouliu.net/i/20180223002626ad08g.png)
+
+![./../assets/images/20180223002626ad08g.png](./../assets/images/20180223002626ad08g.png)
 
 * Go的版本、Php版本、Python版本：
-![http://upload.ouliu.net/i/20180223012029xj2s8.jpeg](http://upload.ouliu.net/i/20180223012029xj2s8.jpeg)
+
+![./../assets/images/20180223012029xj2s8.jpeg](./../assets/images/20180223012029xj2s8.jpeg)
 
 ### 说明
 该示例包含python,php,go三种语言。（java暂无）
@@ -144,7 +146,7 @@ $transport->close();
 php Client.php --http
 ```
 
-![http://upload.ouliu.net/i/201802230042026zg6h.png](http://upload.ouliu.net/i/201802230042026zg6h.png)
+![./../assets/images/201802230042026zg6h.png](./../assets/images/201802230042026zg6h.png)
 
 ### Python测试
 * 加载thrift-python3模块（只测试python3,python2就不测试了）
@@ -224,7 +226,7 @@ transport.close()
 python3 Server.php
 ```
 
-![http://upload.ouliu.net/i/20180223010050l7322.png](http://upload.ouliu.net/i/20180223010050l7322.png)
+![./../assets/images/20180223010050l7322.png](./../assets/images/20180223010050l7322.png)
 
 ### Go测试
 * 加载go的thrift模块
@@ -306,7 +308,7 @@ func main() {
 go run Server.go
 ```
 
-![http://upload.ouliu.net/i/20180223010517jgc30.png](http://upload.ouliu.net/i/20180223010517jgc30.png)
+![./../assets/images/20180223010517jgc30.png](./../assets/images/20180223010517jgc30.png)
 
 ### 综合测试
 * 开启两个窗口，保证server开启

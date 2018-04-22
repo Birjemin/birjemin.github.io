@@ -9,7 +9,7 @@ apiDoc是一个接口文档，它的创建方式是基于你的源代码的接�
 
 ## 配置方式
 
-![npm版本](http://upload.ouliu.net/i/20180323150537lblhz.png)
+![npm版本](./../assets/images/20180323150537lblhz.png)
 
 1.安装apidoc（npm是啥？？？自己问前端同学吧。。）
 
@@ -65,7 +65,7 @@ http-server apidoc
 
 ## 补充备注
 
-![补充文档](http://upload.ouliu.net/i/201803231530176y373.jpeg)
+![补充文档](./../assets/images/201803231530176y373.jpeg)
 
 ## 参考
 1. [http://apidocjs.com/](http://apidocjs.com/)

@@ -7,11 +7,11 @@ xhgui基于xhprof，以图形化方式显示结果。简单点就是更加直观
 ## 前提
 我的PHP版本是PHP7:
 
-![PHP版本](http://upload.ouliu.net/i/20180203104935y3sca.jpeg)
+![PHP版本](./../assets/images/20180203104935y3sca.jpeg)
 
 MongoDB的版本是V3.6.2:
 
-![MongoDB版本](http://upload.ouliu.net/i/20180207171621gr5jt.jpeg)
+![MongoDB版本](./../assets/images/20180207171621gr5jt.jpeg)
 
 ## 安装步骤
 
@@ -28,7 +28,7 @@ brew install php70-mongo
 ```
 查看是否安装成功(记得重启php-fpm)
 
-![Mongdo扩展](http://upload.ouliu.net/i/201802071738247t0uw.png)
+![Mongdo扩展](./../assets/images/201802071738247t0uw.png)
 
 3.安装php的tideways扩展
 
@@ -49,7 +49,7 @@ tideways.sample_rate=100
 ```
 查看是否安装成功(记得重启php-fpm)
 
-![Tideways扩展](http://upload.ouliu.net/i/20180207174206m8o5p.png)
+![Tideways扩展](./../assets/images/20180207174206m8o5p.png)
 
 4.安装 xhgui
 ```
@@ -121,7 +121,7 @@ server {
 
 5.重启nginx，浏览器访问local.xhprof-gui.com看看能不能访问（没有目录？？你是不是浏览器无法访问目录？？权限没开。。自己配置一下）
 
-![xhprof-gui网站](http://upload.ouliu.net/i/20180207180033h2u2w.png)
+![xhprof-gui网站](./../assets/images/20180207180033h2u2w.png)
 
 6.在postman或者浏览器访问接口，转啊转，好了之后就可以去
 `http://local.xhprof-gui.com/`查看了。（图我就不截了。。）
@@ -129,13 +129,13 @@ server {
 ## 遇到的问题
 1.安装完了，跑起来数据为空
 
-![xgui](http://upload.ouliu.net/i/20180207172139h5vrs.jpeg)
+![xgui](./../assets/images/20180207172139h5vrs.jpeg)
 
 我猜测我安装的xhprof虽然支持PHP7，但是和xhgui不兼容，把config.php里面的 `extension` 参数改成 `tideways_xhprof` 而不是 `xhprof`
 
 2.mongoDb报错
 
-![error](http://upload.ouliu.net/i/20180207172639hv7hc.jpeg)
+![error](./../assets/images/20180207172639hv7hc.jpeg)
 
 这是一个bug（[issue](https://github.com/perftools/xhgui/issues/221)）,请按照这个方法修改相应文件。
 

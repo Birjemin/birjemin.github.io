@@ -1,7 +1,7 @@
 # Redis的使用
 
 ## Redis简介
-![redis简介](http://upload.ouliu.net/i/20180310151124il1mb.jpeg)
+![redis简介](./../assets/images/20180310151124il1mb.jpeg)
 
 ```
 REmote DIctionary Server(Redis) 是一个由Salvatore Sanfilippo写的key-value存储系统。

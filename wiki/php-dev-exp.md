@@ -1,4 +1,5 @@
   # PHP开发小结
+
   参考一些博主的经验和自己的开发经验进行总结-持续更新ing。
 
   ## 功能设计
@@ -7,6 +8,7 @@
   3. 需要uml图（类图、时序图、组件图）、文档沉淀；
 
   ## 编写风格
+  
   1. 遵循PSR-1 基础编码规范[https://laravel-china.org](https://laravel-china.org/topics/2078/psr-specification-psr-1-basic-coding-specification)
   2. 遵循PSR-2 编码风格规范[https://laravel-china.org](https://laravel-china.org/topics/2079/psr-specification-psr-2-coding-style-specification)
   3. 注释！！！
