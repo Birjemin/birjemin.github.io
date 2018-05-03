@@ -40,31 +40,36 @@ foo=bar&baz=The+first+line.%0D%0AThe+second+line.%0D%0A
 ```
 * 纯文本形式，HTML5的属性[Method: POST; Encoding type: text/plain]
 
->Content-Type: text/plain
->
->foo=bar
->baz=The first line.
->The second line.
+```
+Content-Type: text/plain
 
+foo=bar
+baz=The first line.
+The second line.
+```
 * Form中的`input`标签属性是`file`[Method: POST; Encoding type: multipart/form-data]
 
->Content-Type: multipart/form-data; boundary=---------------------------314911788813839
->
->-----------------------------314911788813839
->Content-Disposition: form-data; name="foo"
->
->bar
->-----------------------------314911788813839
->Content-Disposition: form-data; name="baz"
->
->The first line.
->The second line.
->
->-----------------------------314911788813839--
+```
+Content-Type: multipart/form-data; boundary=---------------------------314911788813839
+
+-----------------------------314911788813839
+Content-Disposition: form-data; name="foo"
+
+bar
+-----------------------------314911788813839
+Content-Disposition: form-data; name="baz"
+
+The first line.
+The second line.
+
+-----------------------------314911788813839--
+```
 
 * Form的method为get[Method: GET;a string like the following will be simply added to the URL]
 
->?foo=bar&baz=The%20first%20line.%0AThe%20second%20line.
+```
+?foo=bar&baz=The%20first%20line.%0AThe%20second%20line.
+```
 
 ### Method
 GET POST
