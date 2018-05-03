@@ -14,7 +14,7 @@
 ```
   The FormData object lets you compile a set of key/value pairs to send using XMLHttpRequest. It is primarily intended for use in sending form data, but can be used independently from forms in order to transmit keyed data. The transmitted data is in the same format that the form's submit() method would use to send the data if the form's encoding type were set to multipart/form-data.
 ```
-  大致意思是你可以将数据使用FormData对象编译成键值对形式，然后使用XMLHttpRequest技术向后端发送数据。主要是用来发送form表单数据，也可以发送带键数据。这种形式传输的数据和一个`enctype`属性为`multipart/form-data`并且采用`submit()`方法提交的form表单传输的数据格式相同。（可看另一篇文章[《FormData简介》](http://birjemin.com/wiki/front-form-data)）
+  大致意思是你可以将数据使用FormData对象编译成键值对形式，然后使用XMLHttpRequest技术向后端发送数据。主要是用来发送form表单数据，也可以发送带键数据。这种形式传输的数据和一个`enctype`属性为`multipart/form-data`并且采用`submit()`方法提交的form表单传输的数据格式相同。
 
 ## Ajax使用FormData提交数据
   只是简单的示范一下文件上传，表单数据类似，不写例子了。
