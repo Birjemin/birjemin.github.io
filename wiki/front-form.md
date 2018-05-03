@@ -12,6 +12,7 @@ A media type (also MIME type and content type) is a two-part identifier for file
 
 MIME type是因特网上传输的标识符，它由两部分组成，一个是文件格式一个是格式化内容（format为动词）。
 For example:
+
 ```
 application/javascript
 application/json
@@ -33,11 +34,13 @@ image/gif
 当method为post的时候enctype的值是提交给服务器内容的MIME类型。
 
 * Form默认的encypt[Method: POST; Encoding type: application/x-www-form-urlencoded (default)]
+
 ```
 Content-Type: application/x-www-form-urlencoded
 
 foo=bar&baz=The+first+line.%0D%0AThe+second+line.%0D%0A
 ```
+
 * 纯文本形式，HTML5的属性[Method: POST; Encoding type: text/plain]
 
 ```
@@ -47,6 +50,7 @@ foo=bar
 baz=The first line.
 The second line.
 ```
+
 * Form中的`input`标签属性是`file`[Method: POST; Encoding type: multipart/form-data]
 
 ```
