@@ -117,7 +117,7 @@ print_r($_FILE);exit();
 从参考2来看，上传文件需要使用使用FileReader对象,并且Ajax不使用FormData提交数据略复杂，幸亏有一些大咖封装了一下，比如官方提供了一个`A little vanilla framework`（一点香草？？？？？？这个使用原生写的，不是封装，，，），再比如`ajaxFileUpload`(github地址是参考5，官方有示例，试了一下，妥妥的支持IE6..)。
 
 ## 感受
-FormData是HTML5新增的属性，可能在兼容浏览器上面会抛弃一些古典（old）浏览器，不过简单;利用纯Ajax上传也还好，因为有很多现成的库，比如jquery,axios...从`A little vanilla framework`的示例（参考2）来看，基本是根据form表单的encypt形式，采用相应的方式发送数据。
+FormData是HTML5新增的属性，可能在兼容浏览器上面会抛弃一些古典（old）浏览器，不过简单;利用纯Ajax提交也还好，因为有很多现成的库，比如jquery,axios...从`A little vanilla framework`的示例（参考2）来看，基本是根据form表单的encypt形式，采用相应的方式发送数据。
 
 ## 参考
 1. [https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects](https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects)
