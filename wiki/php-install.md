@@ -8,13 +8,13 @@
 
 ## 步骤
 
-#### 1. 安装php7.1
+#### 安装php7.1
 
 ```
 brew install php71
 ```
 
-#### 2. 修改php-fpm.conf
+#### 修改php-fpm.conf
 
 原因是我有php70,php71,对php70我还是使用之前默认的9000端口，php71更改为9001端口，这样只要在nginx配置站点的时候制定端口就可以使用不同版本的php版本啦！！
 
@@ -22,7 +22,7 @@ brew install php71
 
 ![php71的php-fpm配置](./../assets/images/2018060515190000.png)
 
-#### 3. 启动php-fpm
+#### 启动php-fpm
 
 ```
 cd /usr/local/Cellar/php@7.0/7.0.27_19/sbin
@@ -34,7 +34,7 @@ cd /usr/local/Cellar/php@7.0/7.1.18/sbin
 
 ![php启动php-fpm](./../assets/images/2018060515190003.png)
 
-#### 4. 配置nginx
+#### 配置nginx
 
 ![nginx](./../assets/images/2018060515190004.png)
 
@@ -57,12 +57,12 @@ echo phpinfo();
 
 ![localhost](./../assets/images/2018060515190005.jpeg)
 
-#### 5. 切换php版本
+#### 切换php版本
 Q:lumen安装他用的是php的环境变量，也就是说你不能通过参数告诉他我要用哪个版本来创建lumen,你要指定php环境变量指向的php版本，不然还是无法创建应用。
 
 A:由于运行了两个版本的php-fpm，而且在不同的端口（9000，9001）所以web访问的时候制定端口就好了，但是cli模式访问的时候就比较尴尬了，这里推荐php-version这个东东，不过我遇到了问题，就是切换不了，以至于我只能修改环境变量来制定不同的php版本。（待作者给我答复吧，github~~）
 
-#### 6. 安装redis、xdebug、memcached扩展
+#### 安装redis、xdebug、memcached扩展
 
 感兴趣的可以看一下参考5，大致的意思是brew官方改版tap库了，所以你就别指望`brew install php71-redis`方法来安装redis扩展啦,xdebug,memcached等等统统不支持了，是不是瞬间忧伤成狗了？？？哈哈哈,还有一种方法叫源码安装。（参考4给出了扩展源码地址，下载源码，解压，然后进入目录）
 
