@@ -64,5 +64,6 @@ es的同步是主同步到从，所以如果没有指定master的话，系统会
 
 ## 参考
 1. [https://www.elastic.co/guide/en/elasticsearch/reference/current/rpm.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/rpm.html)
-2. [http://www.cnblogs.com/huangfox/p/3543351.html](http://www.cnblogs.com/huangfox/p/3543351.html)
-3. [https://www.cnblogs.com/sunxucool/p/3799190.html](https://www.cnblogs.com/sunxucool/p/3799190.html)
+2. [http://www.cnblogs.com/dennisit/p/4133131.html](http://www.cnblogs.com/dennisit/p/4133131.html)
+3. [http://www.cnblogs.com/huangfox/p/3543351.html](http://www.cnblogs.com/huangfox/p/3543351.html)
+4. [https://www.cnblogs.com/sunxucool/p/3799190.html](https://www.cnblogs.com/sunxucool/p/3799190.html)
