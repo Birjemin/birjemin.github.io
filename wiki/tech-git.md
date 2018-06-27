@@ -102,6 +102,13 @@ git push
 git log -- fileName
 git show commit-id fileName
 ```
+7. 打标签
+```
+git tag
+git tag 0.0.1
+git push --tags
+git tag -d 0.0.1
+```
 
 ## 综述
 推荐软件:sourceTree
