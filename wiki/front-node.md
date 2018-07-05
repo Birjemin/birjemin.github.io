@@ -12,7 +12,7 @@ Atwood定律：
 
 PS:学习node纯属个人兴趣，不涉及到前端和后端之间的争夺和利益冲突（哈哈哈😁）。
 
-## 原理（摘自参考5）
+## 原理
 ![2018070502.png](./../assets/images/2018070502.png)
 
 Node.js 是基于 Chrome V8引擎构建的，由事件循环（Event Loop）分发 I/O 任务，最终工作线程（Work Thread）将任务丢到线程池（Thread Pool）里去执行，而事件循环只要等待执行结果就可以了。
@@ -28,7 +28,9 @@ Node.js 是基于 Chrome V8引擎构建的，由事件循环（Event Loop）分�
 * 由 Event Loop 将 I/O 任务放到线程池里
 * 只要有资源，就尽力执行
 
-## 使用场景（摘自参考5）
+> （摘自参考5）
+
+## 使用场景
 
 ![2018070501.png](./../assets/images/2018070501.png)
 |分类|描述|相关模块|
@@ -39,12 +41,14 @@ Node.js 是基于 Chrome V8引擎构建的，由事件循环（Event Loop）分�
 |IM即时聊天|实时应用，很多是基于 WebSocket协议的|Socket.io / sockjs|
 |反向代理|提供类似于 nginx 反向代理功能，但对前端更友好|anyproxy / node-http-proxy / hiproxy|
 |前端构建工具|辅助前端开发，尤其是各种预编译，构建相关的工具，能够极大的提高前端开发效率|Grunt / Gulp / Bower / Webpack / Fis3 / YKit|
-|命令行工具 使用命令行是非常酷的方式，前端开发自定义了很多相关工具，无论是shell命令，node脚本，还是各种脚手架等，几乎每个公司\小组都会自己的命令行工具集|Cordova / Shell.js|
+|命令行工具|使用命令行是非常酷的方式，前端开发自定义了很多相关工具，无论是shell命令，node脚本，还是各种脚手架等，几乎每个公司\小组都会自己的命令行工具集|Cordova / Shell.js|
 |操作系统|有实现，但估计不太会有人用|NodeOS|
 |跨平台打包工具|使用 Web 开发技术开发PC客户端是目前最流行的方式，会有更多前端开发工具是采用这种方式的|PC端的electron、nw.js，比如钉钉PC客户端、微信小程序IDE、微信客户端，移动的Cordova，即老的Phonegap，还有更加有名的一站式开发框架Ionicframework|
 |P2P|区块链开发、BT客户端|webtorrent / ipfs|
 |编辑器|Atom 和 VSCode 都是基于 electron 模块的|electron|
 |物联网与硬件|ruff.io和很多硬件都支持node sdk|ruff|
+
+> （摘自参考5）
 
 ## 异步流程技术演变
 建议阅读参考1，关于node的异步流程演变过程。(狼叔威武！)
