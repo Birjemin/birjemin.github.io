@@ -36,7 +36,7 @@ Node.js 是基于 Chrome V8引擎构建的，由事件循环（Event Loop）分�
 
 |分类|描述|相关模块|
 |:---:|:---:|:---:|
-|网站|类似于 cnodejs.org 这样传统的网站|Express / Koa||
+|网站|类似于 cnodejs.org 这样传统的网站|Express / Koa|
 |Api|同时提供给移动端，PC，H5 等前端使用的 HTTP Api 接口|Restify / HApi|
 |Api代理|为前端提供的，主要对后端Api接口进行再处理，以便更多的适应前端开发|Express / Koa|
 |IM即时聊天|实时应用，很多是基于 WebSocket协议的|Socket.io / sockjs|
