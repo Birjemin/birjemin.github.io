@@ -13,17 +13,17 @@ Web browsers, for security and privacy reasons, prevent documents in different d
 ![报错示例](./../assets/images/2018091903.jpeg)
 
 ## 剖析
-参考4，深度好文。
+参考4，深度好文。慕课也有一篇翻译的，建议对比着看。
 
 ## 解决方式
 
-1. 使用web代理的方式处理（详情见参考1）。这也是通用处理方式。
+1.使用web代理的方式处理（详情见参考1）。这也是通用处理方式。
 
 ![图解](./../assets/images/2018091902.gif)
 
 大致的做法就是在web后端向第三方网站发送http请求，然后“包装”一下，供前端调用。
 
-2. Cross-Origin Resource Sharing(CORS)
+2.Cross-Origin Resource Sharing(CORS)
 
 通过添加一些特殊的请求头、响应头，使web进行跨域通信
 
@@ -32,13 +32,13 @@ Web browsers, for security and privacy reasons, prevent documents in different d
 Access-Control-Allow-Origin: * Access-Control-Allow-Credentials: true Access-Control-Expose-Headers: FooBar
 ```
 
-3. jsonp（JSON with Padding）
+3.jsonp（JSON with Padding）
 
 原理：一种非官方跨域数据交互协议，Web页面上调用js文件时则不受是否跨域的影响（不仅如此，凡是拥有”src”这个属性的标签都拥有跨域的能力，比如<\script>、<\img>、<\iframe>。
 
 说明：ajax和jsonp的原理不一样！jsonp说白了就是后端动态生成数据（可以是json，也可以不是），前端通过<scirpt>（也可以是<iframe>或者其他支持跨域的标签）标签请求该数据，从而突破浏览器的同源策略的限制。
 
-4. 。。。可以参考6
+4.。。。可以参考6
 
 ## 总结
 第一种和第二种为主流方式，也是个人使用最多的。。（不清楚其他人。）
