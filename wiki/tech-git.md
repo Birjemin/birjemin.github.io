@@ -109,6 +109,14 @@ git tag 0.0.1
 git push --tags
 git tag -d 0.0.1
 ```
+8. 同步源库
+```
+git remote add upstream xxx.git
+git remote -v
+git fetch upstream
+git merge upstream/master
+git push origin master
+```
 
 ## 综述
 推荐软件:sourceTree
