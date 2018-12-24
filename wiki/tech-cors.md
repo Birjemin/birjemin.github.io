@@ -27,7 +27,9 @@
 
 详情可以参考5
 ```
-Access-Control-Allow-Origin: * Access-Control-Allow-Credentials: true Access-Control-Expose-Headers: FooBar
+Access-Control-Allow-Origin: * 
+Access-Control-Allow-Credentials: true 
+Access-Control-Expose-Headers: FooBar
 ```
 
 3.jsonp（JSON with Padding）
