@@ -30,11 +30,11 @@ InfluxDB is a time series database designed to handle high write and query loads
 
 ## 基本操作
 
-### 1.安装。。（省略，手册有）
+### 安装。。（省略，手册有）
 
-### 2.配置。。（省略，手册有）
+### 配置。。（省略，手册有）
 
-### 3.基本概念
+### 基本概念
 
 1.对比
 
