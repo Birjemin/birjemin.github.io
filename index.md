@@ -8,7 +8,7 @@ When you are looking at the stars, please put the brightest star night sky as my
   > * `专业`：计算机科学与技术(本科)
   > * `Location`: 杭州
   > * `Email`: Birjemin@foxmail.com
-  > * `自媒体号`: 偶然与突然（头条号，大鱼号，企鹅号，百家号）
+  > * `自媒体号`: 偶然与突然（头条号）
   > * `Wechat`: Birjemin
   > * `QQ`: 704992641
   > * `来到地球`: 1994年
@@ -35,3 +35,5 @@ When you are looking at the stars, please put the brightest star night sky as my
 > * 愿岁月风平
 
 那就把周杰伦的《开不了口》送给各位，别再开不了口了啊~（2018.03）
+
+7.PMP在2018年12月第一场雪的时候考完啦，那天冷的一匹~~~现在满血复活，重新开始写博客吧。（2018.12.24）
