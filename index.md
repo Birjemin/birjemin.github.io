@@ -4,8 +4,6 @@
 ```
 When you are looking at the stars, please put the brightest star night sky as my soul.
 ```
-  > * `学校`：中国计量大学
-  > * `专业`：计算机科学与技术(本科)
   > * `Location`: 杭州
   > * `Email`: Birjemin@foxmail.com
   > * `自媒体号`: 偶然与突然（头条号）
