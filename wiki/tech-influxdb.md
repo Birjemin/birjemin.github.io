@@ -37,6 +37,7 @@ InfluxDB is a time series database designed to handle high write and query loads
 ### 3.基本概念
 
 1.对比
+
 |influxDB|传统数据库|
 |:---:|:---:|
 |database|database|
