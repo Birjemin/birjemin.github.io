@@ -152,6 +152,7 @@ DERIVATIVE() DIFFERENCE() ELAPSED() MOVING_AVERAGE() NON_NEGATIVE_DERIVATIVE() S
 > 备注：时序数据库属于细分领域的结果，这类产品其实有很多的选择，合适即可
 
 ## 参考
+
 1. [https://en.wikipedia.org/wiki/Time_series](https://en.wikipedia.org/wiki/Time_series)
 2. [https://docs.influxdata.com/influxdb/v1.7/](https://docs.influxdata.com/influxdb/v1.7/)
 3. [http://hbasefly.com/2017/12/08/influxdb-1/](http://hbasefly.com/2017/12/08/influxdb-1/)
