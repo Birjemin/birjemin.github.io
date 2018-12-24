@@ -91,14 +91,7 @@ ALTER RETENTION POLICY "rp_name" ON db_name" DURATION 3w DEFAULT # 修改
 DROP RETENTION POLICY "rp_name" ON "db_name" # 删除
 ```
 
-释义：
-```
-rp_name：策略名
-db_name：数据库名
-30d：保存30天，h（小时），w（星期）
-REPLICATION 1：副本个数
-DEFAULT 设为默认的策略
-```
+释义：rp_name：策略名，db_name：数据库名，30d：保存30天，h（小时），w（星期），REPLICATION 1：副本个数，DEFAULT 设为默认的策略
 
 3.5.查询
 
@@ -117,15 +110,7 @@ SHOW MEASUREMENTS # 创建新策略（摘自手册）
 DROP CONTINUOUS QUERY <cq_name> ON <db_name> # 删除策略
 ```
 
-释义：
-```
-cq_30m：连续查询的名字
-db_name：具体的数据库名
-mean(temperature): 算平均温度
-weather： 当前表名
-weather30m： 存新数据的表名
-30m：时间间隔为30分钟
-```
+释义：cq_30m：连续查询的名字，db_name：具体的数据库名，mean(temperature): 算平均温度，weather：当前表名，weather30m：存新数据的表名，30m：时间间隔为30分钟
 
 3.7.用户管理(详情见手册)
 
@@ -149,6 +134,7 @@ DERIVATIVE() DIFFERENCE() ELAPSED() MOVING_AVERAGE() NON_NEGATIVE_DERIVATIVE() S
 ## 总结
 
 > 使用场景：DevOps监控数据、应用的指标数据、物联网传感器数据、实数分析的数据...
+
 > 备注：时序数据库属于细分领域的结果，这类产品其实有很多的选择，合适即可
 
 ## 参考
