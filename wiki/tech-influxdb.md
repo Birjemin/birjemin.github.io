@@ -2,18 +2,19 @@
 
 ## 关于时序数据库
 
-### Time series
+1.Time series
+
 ```
 A time series is a series of data points indexed (or listed or graphed) in time order. Most commonly, a time series is a sequence taken at successive equally spaced points in time.
 ```
 时序（时间序列）指基于时间顺序的被索引化的数据点的集合。一般而言，时间序列指的是在时间上连续等距的点的序列。
  
-### Time series database
+2.Time series database
 ```
 A time series database (TSDB) is a software system that is optimized for handling time series data, arrays of numbers indexed by time (a datetime or a datetime range). In some fields these time series are called profiles, curves, or traces.
 ```
 
-### 时序数据库的特点
+3.时序数据库的特点
   * 压缩能力
   * 高性能写入能力
   * 多维度查询能力（索引）
@@ -29,20 +30,20 @@ InfluxDB is a time series database designed to handle high write and query loads
 
 ## 基本操作
 
-### 安装。。（省略，手册有）
+### 1.安装。。（省略，手册有）
 
-### 配置。。（省略，手册有）
+### 2.配置。。（省略，手册有）
 
-### 基本概念
+### 3.基本概念
 
-#### 对比
+1.对比
 |influxDB|传统数据库|
 |:---:|:---:|
 |database|database|
 |measurement|table|
 |point|raw|
 
-#### InfluxDB中的point(就是db中的一行数据，由三部分组成)
+2.InfluxDB中的point(就是db中的一行数据，由三部分组成)
 
 point由时间戳（time）、数据（fields）、标签（tags）组成。(插入语句有体现该特征)
 
@@ -52,16 +53,16 @@ point由时间戳（time）、数据（fields）、标签（tags）组成。(插
 |fields|各种记录值（没有索引的属性）也就是记录的值：温度， 湿度|
 |tags|各种有索引的属性：地区，海拔|
 
-### 基本命令
+3.基本命令
 
-#### 登录登出
+3.1.登录登出
 
 ```
 influx # 登录
 exit # 登出
 ```
 
-#### 数据库操作
+3.2.数据库操作
 
 ```
 CREATE DATABASE db_name # 创建数据库
@@ -73,14 +74,14 @@ SHOW MEASUREMENTS # 显示该数据库中的表
 DROP MEASUREMENT "measurementName" # 删除表
 ```
 
-#### 增（建议看文档理解一下insert语句个字段含义）
+3.3.增（建议看文档理解一下insert语句个字段含义）
 
 ```
 INSERT cpu,host=serverA,region=us_west value=0.64
 ```
 释义：time为默认字段，主索引(对应point的time部分)，自动生成；表名：cpu；字段：host、region、alue、time；索引（对应point的tags部分）：time、host、region；值（对应point的fields部分）：value
 
-#### 保存策略(当数据超过了指定的时间之后，就会被删除)
+3.4.保存策略(当数据超过了指定的时间之后，就会被删除)
 
 ```
 SHOW RETENTION POLICIES ON "db_name" # 查看当前数据库的保存策略
@@ -98,13 +99,13 @@ REPLICATION 1：副本个数
 DEFAULT 设为默认的策略
 ```
 
-#### 查询
+3.5.查询
 
 ```
 SELECT "host", "region", "value" FROM "cpu" # 普通查询
 ```
 
-#### 连续查询(将旧数据归档)
+3.6.连续查询(将旧数据归档)
 
 当数据超过保存策略里指定的时间之后，就会被删除。如果不想完全删除掉，比如做一个数据统计采样，可以把原先每秒的数据，存为每小时的数据，让数据占用的空间大大减少（以降低精度为代价）。
 
@@ -125,9 +126,9 @@ weather30m： 存新数据的表名
 30m：时间间隔为30分钟
 ```
 
-#### 用户管理(详情见手册)
+3.7.用户管理(详情见手册)
 
-#### 函数(重点)
+3.8.函数(重点)
 
 ```
 count()  DISTINCT()  MEAN()  MEDIAN() SPREAD() SUM() # 聚合函数
@@ -147,7 +148,6 @@ DERIVATIVE() DIFFERENCE() ELAPSED() MOVING_AVERAGE() NON_NEGATIVE_DERIVATIVE() S
 ## 总结
 
 > 使用场景：DevOps监控数据、应用的指标数据、物联网传感器数据、实数分析的数据...
-
 > 备注：时序数据库属于细分领域的结果，这类产品其实有很多的选择，合适即可
 
 ## 参考
