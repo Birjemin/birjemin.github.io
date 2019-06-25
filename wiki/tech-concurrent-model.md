@@ -124,8 +124,6 @@ Actor与CSP模型都提倡：`Share memory by communicating, don't communicate b
 4. Nginx和Apache区别：
 事件驱动适合于I/O密集型服务，多进程或线程适合于CPU密集型服务。
 
-
-
 ### 参考
 1. [https://www.zhihu.com/question/25532384](https://www.zhihu.com/question/25532384)
 2. [http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html](http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html)
