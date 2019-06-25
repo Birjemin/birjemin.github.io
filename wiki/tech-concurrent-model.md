@@ -69,14 +69,14 @@
 
 ##### 并行工作者模型
 
-![http://tutorials.jenkov.com/images/java-concurrency/concurrency-models-1.png](http://tutorials.jenkov.com/images/java-concurrency/concurrency-models-1.png)
+![2019062501.png](./../assets/images/2019062501.png)
 
 * 并行工作者模型中，委派者（Delegator）将传入的作业分配给不同的工作者。每个工作者完成整个任务。工作者们并行运作在不同的线程上，甚至可能在不同的cpu上。(多线程、多进程实现：apache)
 * 线程需要避免竟态，死锁以及很多其他共享状态的并发性问题（线程间通信方式为共享内存）。
 
 ##### 事件驱动模型
 
-![http://tutorials.jenkov.com/images/java-concurrency/concurrency-models-3.png](http://tutorials.jenkov.com/images/java-concurrency/concurrency-models-3.png)
+![2019062502.png](./../assets/images/2019062502.png)
 
 * 每个工作者只负责作业中的部分工作。当完成了自己的这部分工作时工作者会将作业转发给下一个工作者。每个工作者在自己的线程中运行，并且不会和其他工作者共享状态(流水线)。
 
@@ -86,7 +86,7 @@
 
 ##### Actor模型
 
-![https://nos.netease.com/cloud-website-bucket/201808281438333f80c862-082d-4e90-bc2f-98897349e7b1.png](https://nos.netease.com/cloud-website-bucket/201808281438333f80c862-082d-4e90-bc2f-98897349e7b1.png)
+![2019062503.png](./../assets/images/2019062503.png)
 
 * 释义：Actor模型由一个个称为Actor的执行体和mailbox组成。用户将消息发送给 Actor，实际上就是将消息放入一个队列中， 然后将其转交给处理被接受消息的一个内部线程。消息让Actor之间解耦。一个Actor 收到其他Actor的消息后，会做出不同的行为，还可能会给其他Actor 发送更进一步的消息。（Erlang）
 
@@ -102,7 +102,7 @@ Actor之间完全独立，只允许消息传递，不允许其他”任何”共
 
 ##### CSP并发模型（协程）
 
-![http://www.jdon.com/simgs/performance/channel.png](http://www.jdon.com/simgs/performance/channel.png)
+![2019062504.png](./../assets/images/2019062504.png)
 
 * Channel模型中，worker之间不直接彼此联系，而是通过不同channel进行消息发布和侦听。消息的发送者和接收者之间通过Channel松耦合，发送者不知道自己消息被哪个接收者消费了，接收者也不知道是哪个发送者发送的消息。(基于协程实现go)
 
@@ -116,7 +116,7 @@ Actor之间完全独立，只允许消息传递，不允许其他”任何”共
 2. Actor和CSP模型相似点：
 Actor与CSP模型都提倡：`Share memory by communicating, don't communicate by sharing memory`，要通过通讯来共享内存，不要通过共享内存来通讯。（避免了使用锁来对竞态资源进行控制）。Actor模型的重点在于参与交流的实体,而CSP模型的重点在于用于交流的通道。
 
-![Actor和CSP区别](https://www.jdon.com/simgs/performance/csp.png)
+![Actor和CSP区别](./../assets/images/2019062505.png)
 
 3. 并发模型与分布式系统相似点：
 在并发系统中线程之间可以相互通信。在分布式系统中进程之间也可以相互通信（进程有可能在不同的机器中）
