@@ -1,7 +1,10 @@
 # 依赖注入（控制反转）
 
 ## 引入问题
+
 如果类A依赖类B（图1），那么在传统的调用方式中，就会出现在类A中实例化类B，这种方式是很普遍的方式，顶多属于硬编码，代码中出现了一些不好的味道（bad smell），不能灵活多变，而且耦合度高，如果类A根据不同的条件分别依赖类B，类C呢？情况将变得更加复杂，所以提出来这么一个思想（图2），对象在被创建的时候，由一个调控系统（引入容器的概念）内所有对象的外界实体，将其所依赖的对象的引用传递(注入)给它（降低耦合）。这种思想（设计原则）称作控制反转。实现控制反转的方式有：依赖注入（Dependency Injection，简称DI）、“依赖查找”（Dependency Lookup）。
+<img src= "./../assets/images/2019070201.jpeg" height="340px">
+<img src= "./../assets/images/2019070202.png" height="400px">
 
 ## 简介
 
@@ -9,8 +12,7 @@
 
 Inversion of control (IoC) is a programming principle. IoC inverts the flow of control as compared to traditional control flow. In IoC, custom-written portions of a computer program receive the flow of control from a generic framework. A software architecture with this design inverts control as compared to traditional procedural programming: in traditional programming, the custom code that expresses the purpose of the program calls into reusable libraries to take care of generic tasks, but with inversion of control, it is the framework that calls into the custom, or task-specific, code.（维基百科）
 
-<img src= "./../assets/images/2019070201.jpeg" height="340px">
-<img src= "./../assets/images/2019070202.png" height="400px">
+大致的意思Ioc是一种编码原则，传统的编程解决依赖是直接调用可重用库，在Ioc编码原则中，交由框架（容器）来进行调用。
 
 ### 依赖注入（DI）：
 
