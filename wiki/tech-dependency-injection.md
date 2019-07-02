@@ -11,15 +11,16 @@ Inversion of control (IoC) is a programming principle. IoC inverts the flow of c
 
 理解：如果类A依赖类B（图1），那么在传统的调用方式中，就会出现在类A中实例化类B，这种方式是很普遍的方式，顶多属于硬编码，代码中出现了一些不好的味道（bad smell），不能灵活多变，而且耦合度高，如果类A根据不同的条件分别依赖类B，类C呢？情况将变得更加复杂，所以提出来这么一个思想（图2），对象在被创建的时候，由一个调控系统（引入容器的概念）内所有对象的外界实体，将其所依赖的对象的引用传递(注入)给它（降低耦合，）。这种思想（设计原则）称作控制反转。实现控制反转的方式有：依赖注入（Dependency Injection，简称DI）、“依赖查找”（Dependency Lookup）。
 
-<img src= "./../assets/images/2019070201.jpeg" width="200px">
+<img src= "./../assets/images/2019070201.jpeg" width="340px">
 
-![图2](./../assets/images/2019070202.png)
+<img src= "./../assets/images/2019070202.png" width="340px">
+
 
 控制反转是对象的角度看待这个问题的，传统的调用中是由对象来主动创建另一个依赖的对象（可以理解为正转），而反转的意思是交由容器来解决对象的创建。（图3，图4对比）
 
-![图1](./../assets/images/2019070203.jpeg)
+<img src= "./../assets/images/2019070203.jpeg" width="340px">
 
-![图1](./../assets/images/2019070204.jpeg)
+<img src= "./../assets/images/2019070204.jpeg" width="340px">
 
 依赖注入是站在容器的角度看待这个问题的，由容器动态的将某个依赖关系注入到组件之中。依赖注入的目的并非为软件系统带来更多功能，而是为了提升组件重用的频率，并为系统搭建一个灵活、可扩展的平台。
 
