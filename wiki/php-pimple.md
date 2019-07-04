@@ -285,8 +285,8 @@ class Container implements \ArrayAccess
 ```
 
 ## 示例
-1.参考2给出了具体的一些使用姿势，参考4给出了pimple的一些优点
-2.easywechat[https://github.com/overtrue/wechat](https://github.com/overtrue/wechat)
+1. 参考2给出了具体的一些使用姿势，参考4给出了pimple的一些优点
+2. easywechat[https://github.com/overtrue/wechat](https://github.com/overtrue/wechat)
 
 ## 补充
 
