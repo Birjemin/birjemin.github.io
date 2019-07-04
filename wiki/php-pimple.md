@@ -136,7 +136,7 @@ class Container implements \ArrayAccess
     public function offsetUnset($id)
     {
         if (isset($this->keys[$id])) {
-            // 为对象或者闭包（克制factories和protected存储的是对象或者闭包）
+            // 为对象或者闭包（factories和protected存储的是对象或者闭包）
             if (\is_object($this->values[$id])) {
                 unset($this->factories[$this->values[$id]], $this->protected[$this->values[$id]]);
             }
