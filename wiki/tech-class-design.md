@@ -14,7 +14,7 @@ SOLID:
 ## 详情
 
 ### 单一职责原则（SRP:Single responsibility principle）
-解耦和增强内聚性（高内聚，低耦合），一个类和方法的只负责一个职责
+解耦和增强内聚性（高内聚，低耦合），一个类和方法的只负责一个职责(There should never be more than one reason for a class to change)
 
 * 示例1：一个类中一个方法职责混乱。
 
@@ -116,7 +116,8 @@ class DrawManage
 ### 开闭原则(OCP:Open/Closed Principle)
 
 对扩展开放，对修改关闭。
-与其修改别人的代码（或者老代码）不如先继承，然后更改。
+与其修改别人的代码（或者老代码）不如先继承，然后更改。(software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.)
+
 * 示例1：新增一个学生，应当采用继承的方式来做，而不是修改原有的代码
 
 ```php
@@ -251,10 +252,11 @@ class Work
 
 ### 里氏替换原则（LSP:Liskov Substitution Principle）
 
-父类出现的地方子类就可以出现，且替换成子类也不会出现任何错误或者异常。
+父类出现的地方子类就可以出现，且替换成子类也不会出现任何错误或者异常。(If S is a subtype of T, then objects of type T may be replaced with objects of type S (i.e., objects of type S may substitute objects of type T) without altering any of the desirable properties of that program (correctness, task performed, etc.))
 
 ### 接口隔离原则 (ISP:Interface Segregation Principle)
 
+Clients should not be forced to depend upon interfaces that they do not use.(接口隔离)
 针对接口的原则，规范如下：
 * 接口尽量小（细化业务）
 * 接口高内聚（减少对外交互，public方法少）
@@ -336,3 +338,4 @@ class Worker implements WorkerInterface
 2. [https://segmentfault.com/a/1190000011662984](https://segmentfault.com/a/1190000011662984)
 3. [http://blog.csdn.net/jhq0113/article/details/44907029](http://blog.csdn.net/jhq0113/article/details/44907029)
 4. [https://www.jianshu.com/p/21573a0b2ad9](https://www.jianshu.com/p/21573a0b2ad9)
+5. [https://github.com/jupeter/clean-code-php#single-responsibility-principle-srp](https://github.com/jupeter/clean-code-php#single-responsibility-principle-srp)
