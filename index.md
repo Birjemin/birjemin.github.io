@@ -6,7 +6,7 @@ When you are looking at the stars, please put the brightest star night sky as my
 ```
   > * `Location`: 杭州
   > * `Email`: Birjemin@foxmail.com
-  > * `自媒体号`: 偶然与突然（头条号）
+  > * `自媒体`: 偶然与突然
   > * `Wechat`: Birjemin
   > * `QQ`: 704992641
   > * `来到地球`: 1994年
