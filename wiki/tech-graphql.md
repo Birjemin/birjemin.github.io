@@ -8,12 +8,14 @@ API（Application Programming Interface，应用程序编程接口）是一些
 预先定义的函数，目的是提供应用程序与开发人员基于某软件或硬件得以访问一组例程的能力，屏蔽底层细节。
 
 ## RESTful
+
 1. 定义：Representational State Transfer(表现层【资源】状态转化)。
 2. 特点：
     * 每一个URI代表一种资源；
     * 客户端和服务器之间，传递这种资源的某种表现层；
     * 客户端通过四个HTTP动词，对服务器端资源进行操作，实现"表现层状态转化"；
 3. 规范：
+
 ```
 【GET】     /{resources}/{resource_id}      // 返回单个资源对象
 【GET】     /{resources}                    // 返回资源对象的列表
@@ -41,6 +43,7 @@ POST|GET deleteOrderInfo.php
 # 后台
 GET getUserOrderInfo.php
 ...
+
 ```
 
 ```
@@ -85,7 +88,9 @@ GET api/hobbies
     * ...
 
 ## GraphQL
+
 1. 背景：Facebook开发GraphQL的最初原因是移动用户的增加、低功耗设备和松散的网络。GraphQL最小化了需要网络传输的数据量，从而极大地改善了在这些条件下运行的应用程序。
+
 2. 定义：GraphQL 既是一种用于 API 的查询语言也是一个满足你数据查询的运行时。GraphQL 对你的 API 中的数据提供了一套易于理解的完整描述，使得客户端能够准确地获得它需要的数据，而且没有任何冗余，也让 API 更容易地随着时间推移而演进，还能用于构建强大的开发者工具(参考12)。
 ```
 GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.
@@ -93,11 +98,7 @@ GraphQL is a query language for APIs and a runtime for fulfilling those queries 
 
 <b>GraphQL试图抽象服务端的数据成为一个综合的数据集合，而前端（客户端）的请求就是查询数据库。</b>
 
-3. 示例：
-
-![官方示例](http://thyrsi.com/t6/376/1537872909x-1566679839.png)
-
-4. 优缺点：
+3. 优缺点：
     * 取消服务端硬编码（面向客户端友好【结对】编程，减少对服务端的依赖）。
     * http传输数据减少（request，response）。
     * 强类型。
@@ -114,6 +115,7 @@ GraphQL is a query language for APIs and a runtime for fulfilling those queries 
 
 ## 延伸
 1. GraphQL(参考9)
+
 ```
 // require composer
 composer require rebing/graphql-laravel
@@ -127,11 +129,15 @@ php artisan vendor:publish --provider="Rebing\GraphQL\GraphQLServiceProvider"
 // 配置文件配置query和type
 // 请求。。。参考10
 ```
+
 2. 面向资源编程。(参考7,8)
+
 3. 所见即所得(What You See Is What You Get)。
 
 ## 总结
+
 1. 认识RESTful和GraphQL。
+
 2. 抽象能力：资源（面向资源编程，使用动作类），图（数据的表现形式最直观的表现方法）
 
 ## 参考
