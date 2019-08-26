@@ -40,6 +40,7 @@ $pipeline->process(10);
 ## 源码阅读
 
 * Pipeline.php
+
 ```
 <?php
 declare(strict_types=1);
@@ -88,6 +89,7 @@ class Pipeline implements PipelineInterface
 封装Pipeline方法，提供add和build方法。
 
 * 官方示例
+
 ```
 $pipeline = (new Pipeline)
     ->pipe(function () {
