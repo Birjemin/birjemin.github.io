@@ -94,45 +94,45 @@ foreach (xrange(0, 9) as $key => $val) {
 
 ## 生成器的特性
 
-* 生成器为可中断函数
-    如上例
+### 生成器为可中断函数
+如上例
 
-* 值可传递
-    方法`printer()`返回的是一个`Generarot`对象，该对象有一个`send()`方法，可以传递参数。
+### 值可传递
+方法`printer()`返回的是一个`Generarot`对象，该对象有一个`send()`方法，可以传递参数。
 
-    ```php
-    function printer()
-    {
-        while (true) {
-            printf("receive: %s\n", yield);
-        }
+```php
+function printer()
+{
+    while (true) {
+        printf("receive: %s\n", yield);
     }
-    $printer = printer();
-    $printer->send('hello');
-    $printer->send('world');
-    // 输出
-    receive: hello
-    receive: world
-    ```
+}
+$printer = printer();
+$printer->send('hello');
+$printer->send('world');
+// 输出
+receive: hello
+receive: world
+```
 
-* 双向通信
-    可以在两个层级间（主函数代码片段、`yield`代码片段）实现可以传递参数，也能接收结果。
+### 双向通信
+可以在两个层级间（主函数代码片段、`yield`代码片段）实现可以传递参数，也能接收结果。
 
-    ```php
-    function gen() {
-        $ret = (yield 'yield1');
-        var_dump($ret);
-        $ret = (yield 'yield2');
-        var_dump($ret);
-    }
+```php
+function gen() {
+    $ret = (yield 'yield1');
+    var_dump($ret);
+    $ret = (yield 'yield2');
+    var_dump($ret);
+}
 
-    $gen = gen();
-    var_dump($gen->current());    // string(6) "yield1"
-    var_dump($gen->send('ret1')); // string(4) "ret1"   (第一个 var_dump)
-                                // string(6) "yield2" (继续执行到第二个 yield，吐出了返回值)
-    var_dump($gen->send('ret2')); // string(4) "ret2"   (第二个 var_dump)
-                                // NULL (var_dump 之后没有其他语句，所以这次 ->send() 的返回值为 null)
-    ```
+$gen = gen();
+var_dump($gen->current());    // string(6) "yield1"
+var_dump($gen->send('ret1')); // string(4) "ret1"   (第一个 var_dump)
+                            // string(6) "yield2" (继续执行到第二个 yield，吐出了返回值)
+var_dump($gen->send('ret2')); // string(4) "ret2"   (第二个 var_dump)
+                            // NULL (var_dump 之后没有其他语句，所以这次 ->send() 的返回值为 null)
+```
 
 ## 总结
 yield关键字不仅可用于迭代数据，也因为它的双向通信，可用于协程在php语言中的实现，必须清楚的是`yield`是生成器里面的关键字，协程能够使用生成器来实现，是因为生成器可以双向通信，当然协程也可以使用其他的方式实现，例如swoole的协程实现方式。（关于协程暂时不多说，该篇文章主要介绍的是`yield`关键字，即生成器），关于更多的生成器示例可以google。
