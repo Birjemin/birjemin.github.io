@@ -28,9 +28,11 @@
 详情可以参考5
 ```
 Access-Control-Allow-Origin: * 
-Access-Control-Allow-Credentials: true 
+Access-Control-Allow-Credentials: false 
 Access-Control-Expose-Headers: FooBar
 ```
+
+`Access-Control-Allow-Credentials`这个属性可以深究一下，该字段可选。它的值是一个布尔值，表示是否允许发送Cookie。默认情况下，Cookie不包括在CORS请求之中。设为true，即表示服务器明确许可，Cookie可以包含在请求中，一起发给服务器。这个值也只能设为true，如果服务器不要浏览器发送Cookie，删除该字段即可。一般不建议设置为true，尤其是origin为*时。
 
 3.jsonp（JSON with Padding）
 
