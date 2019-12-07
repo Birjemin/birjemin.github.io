@@ -80,7 +80,7 @@ func (m *Mutex) Lock() {
     if old&mutexLocked != 0 {
       new = old + 1<<mutexWaiterShift
     }
-    // 是否是被信号唤醒的，如果是唤醒的，将重置woken位，不理解没事，可以调到unlock方法那里查看这个操作的意义
+    // 是否是被信号唤醒的，如果是唤醒的，将重置唤醒位，不理解没事，可以调到unlock方法那里查看这个操作的意义，unlock中由将其唤醒的操作
     if awoke {
       // The goroutine has been woken from sleep,
       // so we need to reset the flag in either case.
@@ -88,7 +88,7 @@ func (m *Mutex) Lock() {
     }
     // 尝试去修改state
     if atomic.CompareAndSwapInt32(&m.state, old, new) {
-      // 如果old不是lock状态，说明可以获取，直接跳出()
+      // 如果old不是lock状态，说明可以获取，直接跳出
       if old&mutexLocked == 0 {
         break
       }
@@ -121,7 +121,7 @@ func (m *Mutex) Unlock() {
   for {
     // If there are no waiters or a goroutine has already
     // been woken or grabbed the lock, no need to wake anyone.
-    // 等待的goroutine数量为0 或者没有锁住或者唤醒，说明都可以直接释放
+    // 等待的goroutine数量为0 或者没有锁住或者已经被唤醒，说明都可以直接释放(不需要下面再次唤醒)
     if old>>mutexWaiterShift == 0 || old&(mutexLocked|mutexWoken) != 0 {
       return
     }
