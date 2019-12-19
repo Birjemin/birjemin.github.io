@@ -1,9 +1,9 @@
 # DNS
 
 ## 释义
-```
+
 The Domain Name System (DNS) is a distributed directory that resolves human-readable hostnames, such as www.dyn.com, into machine-readable IP addresses like 50.16.85.103. DNS is also a directory of crucial information about domain names, such as email servers (MX records) and sending verification (DKIM, SPF, DMARC), TXT record verification of domain ownership, and even SSH fingerprints (SSHFP).
-```
+
 域名系统（DNS）是一个分布式的目录，主要要是将人类可读的域名转成对应的IP地址。
 
 ## 简介
