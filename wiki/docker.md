@@ -58,24 +58,27 @@ Docker容器是Docker镜像的可运行实例。可以使用Docker API或者CLI�
 
 ### 常用命令
 * docker
-```
-docker images // 镜像列表
-docker pull ubuntu // 拉取镜像
-docker search ubuntu // 搜索镜像
-docker rmi ubuntu // 删除镜像
-docker tag 860c279d2fec runoob/centos:dev // 添加标签
 
-docker stats --help // 状态
-docker run -it ubuntu /bin/bash // 以ubuntu镜像创建一个容器并且进入容器
-docker ps // 查看正在运行的容器
-docker start/stop/restart b750bbbcfd88 // 启动/停止/重启指定的容器
-docker run -b750bbbcfd88 --name ubuntu-test ubuntu /bin/bash // 后台运行
-docker exec -it b750bbbcfd88 /bin/bash // 进入容器
-docker rm -f 1e560fca3906 // 删除容器
 ```
+  docker images // 镜像列表
+  docker pull ubuntu // 拉取镜像
+  docker search ubuntu // 搜索镜像
+  docker rmi ubuntu // 删除镜像
+  docker tag 860c279d2fec runoob/centos:dev // 添加标签
+
+  docker stats --help // 状态
+  docker run -it ubuntu /bin/bash // 以ubuntu镜像创建一个容器并且进入容器
+  docker ps // 查看正在运行的容器
+  docker start/stop/restart b750bbbcfd88 // 启动/停止/重启指定的容器
+  docker run -b750bbbcfd88 --name ubuntu-test ubuntu /bin/bash // 后台运行
+  docker exec -it b750bbbcfd88 /bin/bash // 进入容器
+  docker rm -f 1e560fca3906 // 删除容器
+```
+
 * Dockerfile构建镜像文件
 * Docker Compose统一编排镜像
 * 删除
+
 ```
 1.停止所有的container，这样才能够删除其中的images：
 docker stop $(docker ps -a -q)
@@ -97,6 +100,7 @@ docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
 
 docker rmi $(docker images -q)
 ```
+
 ## 额外练习
 参考5
 
