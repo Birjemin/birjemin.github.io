@@ -2,7 +2,8 @@
 
 ## 简介
 ```
-The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative, hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web.
+The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative, 
+hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web.
 ```
 超文本传输协议是用于分布式，协作式和超媒体信息系统的应用层协议。HTTP协议是万维网数据通信的基础。
 设计HTTP最初的目的是为了提供一种发布和接收HTML页面的方法。通过HTTP或者HTTPS协议请求的资源由统一资源标识符（Uniform Resource Identifiers，URI）来标识。
