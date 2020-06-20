@@ -71,9 +71,7 @@ $ go run rank.go
 
 ### 使用场景
 #### UUID的实现
-- 比如Google的UUID的实现就使用的是`crypto/rand`，[仓库](https://github.com/google/uuid)
-
-- 简易的实现
+比如Google的UUID的实现就使用的是`crypto/rand`，[仓库](https://github.com/google/uuid)，UUID的简易的实现：
 
   ```golang
   package main
@@ -100,10 +98,10 @@ $ go run rank.go
   ```
 
 #### jwt的实现
-- jwt仓库[仓库](https://github.com/dgrijalva/jwt-go)
+jwt仓库[仓库](https://github.com/dgrijalva/jwt-go)
 
 #### 简单的随机数
-- 使用`math/rand`即可
+使用`math/rand`即可
 
 ## 备注
 
