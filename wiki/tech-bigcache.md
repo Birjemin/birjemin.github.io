@@ -7,7 +7,7 @@ Freecache is the only one of the available in-memory caches in Go which provides
 
 1. 使用分片
 2. 删除机制
-3. 关闭GC
+3. 不触发GC
 
 ## 思想
 
@@ -33,7 +33,7 @@ Golang的GC(垃圾回收机制)在对Map标记和扫描阶段即有可能会出�
 
 - GC作用于heap(堆), 所以可以关掉堆，[仓库](https://godoc.org/github.com/glycerine/offheap)，该仓库提供了新的的方式（非堆）来分配和释放内存的内置方法来管理内存。（问题2.需要关注怎么实现的）
 - 第二个仓库，[仓库](https://github.com/coocood/freecache)，通过减少指针的数量来达到零GC开销（问题3.如何减少），将key和value保存到ring_buffer（问题4.这是啥）中，使用索引切片查找条目。
-- 移除GC，Go version 1.5中给出了方式和条件(This optimization states that if map without pointers in keys and values is used then GC will omit its content)
+- 不触发GC，Go version 1.5中给出了方式和条件(This optimization states that if map without pointers in keys and values is used then GC will omit its content)
 
 Bigcache采用了第三种方式。
 
