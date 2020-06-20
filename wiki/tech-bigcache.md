@@ -47,7 +47,7 @@ BigCache does not handle collisions. When new item is inserted and it's hash col
 
 ## 备注
 1. 问题1解答：
-代码位置[code](https://github.com/allegro/bigcache/blob/master/fnv.go)，其实是对参考3的实现，N被指定。这是也能理解为什么说`When the number of shards is relatively high and the hash function returns properly distributed numbers for unique keys then the locks contention can be minimized almost to zero`，因为N真的好大。。
+代码位置[code](https://github.com/allegro/bigcache/blob/master/fnv.go)，其实是对参考3的实现，N被指定（默认为1024）。这是也能理解为什么说`When the number of shards is relatively high and the hash function returns properly distributed numbers for unique keys then the locks contention can be minimized almost to zero`，因为N真的挺大。。
 
 2. 问题2解答：实现了自己的一套方式，不使用golang提供的Malloc和Free方式。
 `Writing our own Malloc() and Free() implementation (see malloc.go) which requests memory directly from the OS. The keys, the values, and the entire hash table itself is kept in this off-heap storage.`
