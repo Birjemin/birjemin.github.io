@@ -3,7 +3,7 @@
 
 ### Encoding/json
 内置的JSON操作方式
-#### Encoding
+#### 编码
 
 ```golang
 func Marshal(v interface{}) ([]byte, error)
@@ -42,7 +42,7 @@ func main() {
 - Cyclic data structures are not supported; they will cause Marshal to go into an infinite loop.(参考2)
 - Pointers will be encoded as the values they point to (or 'null' if the pointer is nil).
 
-#### Decoding
+#### 解码
 ```
 func Unmarshal(data []byte, v interface{}) error
 ```
@@ -80,15 +80,92 @@ func main() {
 - An exported field named "FOO" or "FoO" or some other case-insensitive match of "Foo".
 - Unmarshal will decode only the fields that it can find in the destination type. In this case, only the Name field of m will be populated, and the Food field will be ignored. 
 
-#### Streaming Encoders and Decoders
+#### 拥有interface{}的通用JOSN
+- 先解析
+- 后断言
+
+举个🌰
+```golang
+package main
+
+import (
+	"encoding/json"
+	"log"
+)
+
+type Message struct {
+	Name string `json:"name"`
+	Time int64  `json:"time,omitempty"`
+	Child []int `json:"child"`
+}
+
+func main() {
+
+	var m map[string]interface{}
+	str := `{"name":"Alic","child":[1,2], "time": 10}`
+	err := json.Unmarshal([]byte(str), &m)
+	if err != nil {
+		panic(err)
+	}
+
+	ret := m["name"].(string)
+	log.Printf("b:%+v, %s ", m, ret)
+}
+
+func convert(i interface{}) {
+	switch v := i.(type) {
+	case int:
+			fmt.Println("twice i is", v*2)
+	case float64:
+			fmt.Println("the reciprocal of i is", 1/v)
+	case string:
+			h := len(v) / 2
+			fmt.Println("i swapped by halves is", v[h:]+v[:h])
+	default:
+    // i isn't one of the types above
+	}
+}
+```
+
+#### 解码任意数据
+同上
+
+举个🌰
+```golang
+package main
+
+import (
+	"encoding/json"
+	"log"
+)
+
+type Message struct {
+	Name string `json:"name"`
+	Time int64  `json:"time,omitempty"`
+	Child []int `json:"child"`
+}
+
+func main() {
+
+	str := []byte(`{"Name":"Wednesday","Age":6,"Parents":["Gomez","Morticia"]}`)
+	var m interface{}
+	err := json.Unmarshal(str, &m)
+	if err != nil {
+		panic(err)
+	}
+
+	log.Printf("b:%+v ", m)
+}
+```
+
+#### 文件流的解码和编码
 扩展内容
 ```golang
 func NewDecoder(r io.Reader) *Decoder
 func NewEncoder(w io.Writer) *Encoder
 ```
 
-
-#### Differences When Working With JSON⚠️
+#### 与JSON工作时的注意事项⚠️
 - Map结构的数据在`JSON Encode`时将按照键名照字母顺序排列
 - Byte类型的数据在`JSON Encode`时将转成base64格式
 - Nil和empty在`JSON Encode`时不一样
