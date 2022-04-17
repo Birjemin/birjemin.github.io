@@ -759,7 +759,7 @@ desiredReplicas = ceil[currentReplicas * ( currentMetricValue / desiredMetricVal
 - 一个Headless Service，用于维护MongoDB集群的状态。
 - 一个StatefulSet。
 ```yaml
-### storageclass-fast.yaml
+# storageclass-fast.yaml
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
@@ -768,7 +768,8 @@ provisioner: kubernetes.io/glusterfs
 parameters:
   resturl: "http://<heketi-rest-uri>"
 
-## mongo-headless-service.yaml
+---
+# mongo-headless-service.yaml
 apiVersion: v1
 kind: Service
 metadata:
@@ -783,7 +784,8 @@ spec:
   selector:
     role: mongo
 
-## statefulset-mongo.yaml
+---
+# statefulset-mongo.yaml
 apiVersion: apps/v1
 king: StatefulSet
 metadata:
