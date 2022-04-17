@@ -865,12 +865,13 @@ rs.status()
 ### StatfulSet的创建应用场景
 1. MongoDB集群的扩容
 
-```
+```bash
 kubectl scale --replicas=4 statefulset mongo
 kubectl get pod -l role=mongo
 kubectl exec -it mongo-0 -- mongo
 rs.status()
 ```
+
 2. 自动故障恢复（MongoDB集群的高可用）
 假设在系统运行过程中，某个mongo实例或其所在主机发生故障，则StatefulSet将会自动重建该mongo实例，并保证其身份(ID)和使用 的数据(PVC)不变。
 
