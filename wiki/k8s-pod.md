@@ -53,6 +53,7 @@ kubectl create configmap NAME --from-file=[key=]source
 
 ### 在Pod中使用ConfigMap
 - 通过环境变量方式使用ConfigMap
+
 ```yaml
 apiVersion: v1
 kind: ConfigMap
@@ -62,7 +63,7 @@ data:
   apploglevel: info
   appdatadir: /var/data
 
-
+---
 apiVersion: v1
 kind: Pod
 ...
@@ -81,6 +82,7 @@ kind: Pod
             key: appdatadir
 ...
 ```
+
 - 通过volumeMount使用ConfigMap
 ```yaml
 apiVersion: v1
@@ -90,8 +92,7 @@ metadata:
 data:
   apploglevel: info
   appdatadir: /var/data
-
-
+---
 apiVersion: v1
 kind: Pod
 ...
@@ -110,7 +111,9 @@ kind: Pod
         - key: appdatadir
           path: logging.properties
 ...
+```
 
+```
 cat /configfiles/server.xml
 cat /configfiles/logging.properties
 ```
