@@ -1,5 +1,9 @@
 
 # 深入掌握Pod
+Kubernetes权威指南-第四版本，笔记整理：
+
+第三篇：深入掌握Pod
+
 Pod和容器的使用、应用配置管理、Pod的控制和调度管理、Pod的升级和回滚，以及Pod的扩缩容机制等内容
 ## Pod定义详解
 
@@ -84,6 +88,7 @@ kind: Pod
 ```
 
 - 通过volumeMount使用ConfigMap
+
 ```yaml
 apiVersion: v1
 kind: ConfigMap
@@ -325,6 +330,7 @@ NodeAffinity意为Node亲和性的调度策略，是用于替换NodeSelector的�
 - RequiredDuringSchedulingIgnoredDuringExecution:必须满足指定的规则才可以调度Pod到Node上(功能与nodeSelector很像，但是使用的是不同的语法)，相当于硬限制。
 - PreferredDuringSchedulingIgnoredDuringExecution：强调优先满
 足指定规则，调度器会尝试调度Pod到Node上，但并不强求，相当于软限制。多个优先级规则还可以设置权重(weight)值，以定义执行的先后顺序
+
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -353,6 +359,7 @@ spec:
     image: kubeguide/redis-master
 ...
 ```
+
 NodeAffinity语法支持的操作符包括In、NotIn、Exists、DoesNotExist、Gt、Lt。
 
 ### PodAffinity：Pod亲和与互斥调度策略
@@ -382,6 +389,7 @@ spec:
 ```
 
 2. 创建第2个Pod来说明Pod的亲和性调度，这里定义的亲和标签 是security=S1，对应上面的Pod“pod-flag”，topologyKey的值被设置 为“kubernetes.io/hostname”
+
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -400,10 +408,12 @@ spec:
   containers:
 ...
 ```
+
 创建Pod之后，使用`kubectl get pods -o wide`命令可以看到，这两个Pod在同一个Node上运行;
 如果在创建这个Pod之前，删掉这个节点的kubernetes.io/hostname标签，重复上面的创建步骤，将会发现Pod一直处于Pending状态，这是因为找不到满足条件的Node了
 
 3. Pod的互斥性调度
+
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -431,6 +441,7 @@ spec:
   containers:
 ...
 ```
+
 这里要求这个新Pod与security=S1的Pod为同一个zone，但是不与 app=nginx的Pod为同一个Node。创建Pod之后，同样用kubectl get pods -o wide来查看，会看到新的Pod被调度到了同一Zone内的不同Node上
 
 与节点亲和性类似，Pod亲和性的操作符也包括In、NotIn、Exists、 DoesNotExist、Gt、Lt
@@ -448,6 +459,7 @@ kubectl taint nodes node1 key=value:NoSchedule
 ```
 
 2. 然后，需要在Pod上声明Toleration。下面的两个Toleration都被设置 为可以容忍(Tolerate)具有该Taint的Node，使得Pod能够被调度到 node1上
+
 ```yaml
 tolerations:
 - key: "key"
@@ -456,6 +468,7 @@ tolerations:
   effect: "NoSchedule"
 ```
 或者
+
 ```yaml
 tolerations:
 - key: "key"
@@ -497,6 +510,7 @@ DaemonSet的Pod调度策略与RC类似，除了使用系统内置的算法在 �
 - 在每个Node上都运行一个性能监控程序，采集该Node的运行 性能数据，例如Prometheus Node Exporter、collectd、New Relic agent或 者Ganglia gmond等。
 
 下面的例子定义为在每个Node上都启动一个fluentd容器，配置文件 fluentd-ds.yaml的内容如下，其中挂载了物理机的两个目 录“/var/log”和“/var/lib/docker/containers”
+
 ```yaml
 apiVersion: apps/v1
 kind: DaemonSet
@@ -761,6 +775,7 @@ desiredReplicas = ceil[currentReplicas * ( currentMetricValue / desiredMetricVal
 - 一个StorageClass，用于StatefulSet自动为各个应用Pod申请 PVC。
 - 一个Headless Service，用于维护MongoDB集群的状态。
 - 一个StatefulSet。
+
 ```yaml
 # storageclass-fast.yaml
 apiVersion: storage.k8s.io/v1
@@ -770,7 +785,6 @@ metadata:
 provisioner: kubernetes.io/glusterfs
 parameters:
   resturl: "http://<heketi-rest-uri>"
-
 ---
 # mongo-headless-service.yaml
 apiVersion: v1
@@ -786,7 +800,6 @@ spec:
   clusterIP: None
   selector:
     role: mongo
-
 ---
 # statefulset-mongo.yaml
 apiVersion: apps/v1
