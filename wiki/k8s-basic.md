@@ -47,7 +47,7 @@ Pod是Kubernetes最重要的基本概念，每个Pod都有一个特殊的被称�
 
 Kubernetes为每个Pod都分配了唯一的IP地址，称之为Pod IP，一个 Pod里的多个容器共享Pod IP地址。Kubernetes底层网络支持集群内任意两个Pod之间的TCP/IP直接通信
 
-#### 分类：
+#### 分类
 
 ![Pod、容器和Node的关系](./../assets/images/2022010802.png)
 ![Pod和周边对象](./../assets/images/2022040901.png)
@@ -91,8 +91,6 @@ kubectl label nodes kube-node  label_name-
 ![Label Selector的作用范围](./../assets/images/2022010804.png)
 
 ### Replication Controller(Replica Set)
-
-<del>RC已废弃</del>
 
 RC是Kubernetes系统中的核心概念之一，简单来说，它其实定义了一个期望的场景，即声明某种Pod的副本数量在任意时刻都符合某个预期值，所以RC的定义包括如下几个部分：
 - Pod期望的数量
