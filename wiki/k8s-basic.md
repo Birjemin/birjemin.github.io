@@ -91,6 +91,7 @@ kubectl label nodes kube-node  label_name-
 ![Label Selector的作用范围](./../assets/images/2022010804.png)
 
 ### Replication Controller(Replica Set)
+
 <d>RC已废弃<d>
 
 RC是Kubernetes系统中的核心概念之一，简单来说，它其实定义了一个期望的场景，即声明某种Pod的副本数量在任意时刻都符合某个预期值，所以RC的定义包括如下几个部分：
