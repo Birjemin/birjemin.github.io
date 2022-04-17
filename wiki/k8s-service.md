@@ -137,8 +137,9 @@ spec:
 
 ### 将容器应用的端口号映射到物理机
 1. 通过设置容器级别的hostPort，将容器应用的端口号映射到物理机上，通过物理机的IP地址和8081端口号访问Pod内的容器服务
+
 ```yaml
-### pod-hostport.yaml
+# pod-hostport.yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -155,8 +156,9 @@ spec:
 ```
 
 2. 通过设置Pod级别的hostNetwork=true，该Pod中所有容器的端口号都将被直接映射到物理机上。在设置hostNetwork=true时需要注意，在容器的ports定义部分如果不指定hostPort，则默认hostPort等于 containerPort，如果指定了hostPort，则hostPort必须等于containerPort的值，通过物理机的IP地址和8080端口号访问Pod内的容器服务
+
 ```yaml
-### pod-hostnetwork.yaml
+# pod-hostnetwork.yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -174,8 +176,9 @@ spec:
 
 ### 将Service的端口号银蛇到物理机
 1. 通过设置nodePort映射到物理机，同时设置Service的类型为NodePort
+
 ```yaml
-### service-nodeport.yaml
+# service-nodeport.yaml
 apiVersion: v1
 kind: Service
 metadata:
