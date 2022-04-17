@@ -2,7 +2,10 @@
 # 深入掌握Pod
 Pod和容器的使用、应用配置管理、Pod的控制和调度管理、Pod的升级和回滚，以及Pod的扩缩容机制等内容
 ## Pod定义详解
+
 ## Pod的基本用法
+Pod可以由1个或多个容器组合而成
+
 ## 静态Pod
 静态Pod是由kubelet进行管理的仅存在于特定Node上的Pod。它们不能通过API Server进行管理，无法与ReplicationController、Deployment 或者DaemonSet进行关联，并且kubelet无法对它们进行健康检查。静态 Pod总是由kubelet创建的，并且总在kubelet所在的Node上运行
 
@@ -15,6 +18,8 @@ Pod和容器的使用、应用配置管理、Pod的控制和调度管理、Pod�
 ![Pod中多个容器共享Volume](./../assets/images/2022012102.png)
 
 ## Pod的配置管理
+应用部署的一个最佳实践是将应用所需的配置信息与程序进行分离，这样可以使应用程序被更好地复用，通过不同的配置也能实现更灵活的功能。将应用打包为容器镜像后，可以通过环境变量或者外挂文件的方式在创建容器时进行配置注入，但在大规模容器集群的环境中，对多个容器进行不同的配置将变得非常复杂。从Kubernetes 1.2开始提供了一种统一的应用配置管理方案—ConfigMap。本节对ConfigMap的概念和用法进行详细描述。
+
 ### ConfigMap概述
 用法
 - 生成为容器内的环境变量
@@ -23,6 +28,14 @@ Pod和容器的使用、应用配置管理、Pod的控制和调度管理、Pod�
 
 ### 创建ConfigMap资源对象
 - 通过YAML配置文件方式创建
+```yaml
+# appvars.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: apploglevel: info
+  appdatadir: /var/data
+```
 ```
 kubectl create -f appvars.yaml
 kubectl get configmap
@@ -113,6 +126,7 @@ cat /configfiles/logging.properties
 ## 在容器内获取Pod信息（Downward API）
 - 环境变量:用于单个变量，可以将Pod信息和Container信息注入容器内部。
 - Volume挂载:将数组类信息生成为文件并挂载到容器内部。下面通过几个例子对Downward API的用法进行说明。
+
 ### 环境变量方式：将Pod信息注入为环境变量
 通过Downward API将Pod的IP、名称和所在Namespace 注入容器的环境变量中，容器应用使用env命令将全部环境变量打印到标准输出中
 ```yaml
@@ -238,18 +252,19 @@ Pod的重启策略(RestartPolicy)应用于Pod内的所有容器，并且仅在Po
 - OnFailure:当容器终止运行且退出码不为0时，由kubelet自动重启该容器。
 - Never:不论容器运行状态如何，kubelet都不会重启该容器。
 kubelet重启失效容器的时间间隔以sync-frequency乘以2n来计算，例如1、2、4、8倍等，最长延时5min，并且在成功重启后的10min后重置该时间。
+
 Pod的重启策略与控制方式息息相关，当前可用于管理Pod的控制器包括ReplicationController、Job、DaemonSet及直接通过kubelet管理(静 态Pod)。每种控制器对Pod的重启策略要求如下。
-- RC和DaemonSet:必须设置为Always，需要保证该容器持续运 行。
+- Deployment和DaemonSet: 必须设置为Always，需要保证该容器持续运行。
 - Job:OnFailure或Never，确保容器执行完成后不再重启。 
-- kubelet:在Pod失效时自动重启它，不论将RestartPolicy设置为什么值，也不会对Pod进行健康检查
+- kubelet: 在Pod失效时自动重启它，不论将RestartPolicy设置为什么值，也不会对Pod进行健康检查
 
 ![一些常见的状态转换场景](./../assets/images/2022012202.png)
 
 ## Pod健康检查和服务可用性检查
 Kubernetes 对Pod的健康状态可以通过两类探针来检查: LivenessProbe和ReadinessProbe，kubelet定期执行这两类探针来诊断容器的健康状况
 
-- LivenessProbe探针:用于判断容器是否存活(Running状 态)，如果LivenessProbe探针探测到容器不健康，则kubelet将杀掉该容器，并根据容器的重启策略做相应的处理。如果一个容器不包含 LivenessProbe探针，那么kubelet认为该容器的LivenessProbe探针返回的值永远是Success。
-- ReadinessProbe探针:用于判断容器服务是否可用(Ready状 态)，达到Ready状态的Pod才可以接收请求。对于被Service管理的 Pod，Service与Pod Endpoint的关联关系也将基于Pod是否Ready进行设置。如果在运行过程中Ready状态变为False，则系统自动将其从Service 的后端Endpoint列表中隔离出去，后续再把恢复到Ready状态的Pod加回后端Endpoint列表。这样就能保证客户端在访问Service时不会被转发到服务不可用的Pod实例上
+- LivenessProbe探针:用于判断容器是否存活(Running状态)，如果LivenessProbe探针探测到容器不健康，则kubelet将杀掉该容器，并根据容器的重启策略做相应的处理。如果一个容器不包含 LivenessProbe探针，那么kubelet认为该容器的LivenessProbe探针返回的值永远是Success。
+- ReadinessProbe探针:用于判断容器服务是否可用(Ready状态)，达到Ready状态的Pod才可以接收请求。对于被Service管理的 Pod，Service与Pod Endpoint的关联关系也将基于Pod是否Ready进行设置。如果在运行过程中Ready状态变为False，则系统自动将其从Service 的后端Endpoint列表中隔离出去，后续再把恢复到Ready状态的Pod加回后端Endpoint列表。这样就能保证客户端在访问Service时不会被转发到服务不可用的Pod实例上
 
 实现方式：
 - ExecAction:在容器内部执行一个命令，如果该命令的返回码为0，则表明容器健康
